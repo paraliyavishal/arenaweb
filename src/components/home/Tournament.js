@@ -1,0 +1,161 @@
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import React from 'react';
+import tournamentbg from '../../assets/images/home/tournament-bg.webp'
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import tournament1 from '../../assets/images/home/tournament-1.webp'
+import tournament2 from '../../assets/images/home/tournament-2.webp'
+import tournament3 from '../../assets/images/home/tournament-3.webp'
+import tournament4 from '../../assets/images/home/tournament-4.webp'
+import tournament5 from '../../assets/images/home/tournament-5.webp'
+import tournament6 from '../../assets/images/home/tournament-6.webp'
+
+function Tournament() {
+
+  return (
+  <Box sx={{backgroundImage:`linear-gradient(rgba(40, 17, 43, 0.7),rgba(40, 17, 43, 0.7)),url(${tournamentbg})`,height:"100%",width:"100%",objectFit:"cover",backgroundSize:"cover"}}>
+       <Container maxWidth="xl">
+            <Box pt={10}>
+                <Typography fontWeight={900} sx={{color:"white",fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontFamily:"'Rajdhani',sans-serif"}}>WATCH TOURNAMENT MATCHES</Typography>
+                <Typography py={2} sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's standard dummy text ever since the 1500s.</Typography>
+            </Box>
+            
+            <Grid item container xs={12} spacing={3} py={3}>
+
+                <Grid item xs={12} md={12} lg={6}>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1000">
+                    <Box border={"2px solid #30D855"}>
+                        <Card sx={{backgroundImage:`linear-gradient(rgba(13, 19, 38, 0),rgba(34, 28, 62, 0.7)),url(${tournament1})`,backgroundSize:"cover",height:"395px",borderRadius:"0px",display:"flex",alignItems:"self-end"}}>
+                            <CardContent>
+                                  <Box>
+                                      <Typography sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif",}} fontWeight={600}>Dota 2 Inter-Championship</Typography>
+                                      <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} py={1}>Lorem ipsum dolor sit amet consectetur. Porta magnis sed non in.</Typography>
+                                  </Box>
+                                  <Box sx={{color:"#BFBFBF",display:"flex",gap:"20px",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} py={1}>
+                                      <i class="fa-brands fa-youtube"></i>
+                                      <i class="fa-brands fa-twitch"></i>
+                                      <i class="fa-brands fa-discord"></i>
+                                  </Box>
+                            </CardContent>
+                        </Card>
+                    </Box>
+                    </div>
+                </Grid>
+
+                <Grid item xs={12} md={6} lg={3}>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-duration="1000">
+                    <Box border={"2px solid #221C3E"} sx={{":hover":{borderColor:"#30D855"},transition:".5s"}}>
+                        <Card sx={{backgroundImage:`linear-gradient(rgba(13, 19, 38, 0),rgba(34, 28, 62, 0.7)),url(${tournament2})`,backgroundSize:"cover",height:"395px",borderRadius:"0px",display:"flex",alignItems:"self-end"}}>
+                            <CardContent>
+                                  <Box>
+                                      <Typography sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={600}>Modern Warfare</Typography>
+                                      <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} py={1} >Lorem ipsum dolor sit amet consectetur. Porta magnis sed non in.</Typography>
+                                  </Box>
+                                  <Box sx={{color:"#BFBFBF",display:"flex",gap:"20px",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} py={1}>
+                                      <i class="fa-brands fa-youtube"></i>
+                                      <i class="fa-brands fa-twitch"></i>
+                                      <i class="fa-brands fa-discord"></i>
+                                  </Box>
+                            </CardContent>
+                        </Card>
+                    </Box>
+                    </div>
+                </Grid>
+
+                <Grid item xs={12} md={6} lg={3}>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" data-aos-duration="1000">
+                    <Box border={"2px solid #221C3E"} sx={{":hover":{borderColor:"#30D855"},transition:".5s"}}>
+                        <Card sx={{backgroundImage:`linear-gradient(rgba(13, 19, 38, 0),rgba(34, 28, 62, 0.7)),url(${tournament3})`,backgroundSize:"cover",height:"395px",borderRadius:"0px",display:"flex",alignItems:"self-end"}}>
+                            <CardContent>
+                                  <Box>
+                                      <Typography sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={600}>Need For Speed</Typography>
+                                      <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} py={1}>Lorem ipsum dolor sit amet consectetur. Porta magnis sed non in.</Typography>
+                                  </Box>
+                                  <Box sx={{color:"#BFBFBF",display:"flex",gap:"20px",fontSize:"20px",fontFamily:"'Raleway', sans-serif"}} py={1}>
+                                      <i class="fa-brands fa-youtube"></i>
+                                      <i class="fa-brands fa-twitch"></i>
+                                      <i class="fa-brands fa-discord"></i>
+                                  </Box>
+                            </CardContent>
+                        </Card>
+                    </Box>
+                    </div>
+                </Grid>
+
+            </Grid>
+
+            <Grid item container xs={12} spacing={3} paddingBottom={5} display={"flex"} sx={{justifyContent:{lg:"start",md:"center",sm:"center",xs:"center"}}}>
+                
+                <Grid item xs={12} md={6} lg={4}>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1000">
+                    <Box border={"2px solid #221C3E"} sx={{":hover":{borderColor:"#30D855"},transition:".5s"}}>
+                        <Card sx={{backgroundImage:`linear-gradient(rgba(13, 19, 38, 0),rgba(34, 28, 62, 0.7)),url(${tournament6})`,backgroundSize:"cover",borderRadius:"0px",display:"flex",alignItems:"self-end"}}>
+                            <CardContent>
+                                  <Box sx={{paddingTop:"85px"}}>
+                                      <Typography sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={600}>Live Tournament Action Witness Thrilling Live Gaming Battles.</Typography>
+                                      <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} py={1}>Lorem ipsum dolor sit amet consectetur. Porta magnis sed non in.</Typography>
+                                  </Box>
+                                  <Box sx={{color:"#BFBFBF",display:"flex",gap:"20px",fontSize:"20px",fontFamily:"'Raleway', sans-serif"}} py={1}>
+                                      <i class="fa-brands fa-youtube"></i>
+                                      <i class="fa-brands fa-twitch"></i>
+                                      <i class="fa-brands fa-discord"></i>
+                                  </Box>
+                            </CardContent>
+                        </Card>
+                    </Box>
+                    </div>
+                </Grid>
+
+                <Grid item xs={12} md={6} lg={4}>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-duration="1000">
+                    <Box border={"2px solid #221C3E"} sx={{":hover":{borderColor:"#30D855"},transition:".5s"}}>
+                        <Card sx={{backgroundImage:`linear-gradient(rgba(13, 19, 38, 0),rgba(34, 28, 62, 0.7)),url(${tournament5})`,backgroundSize:"cover",borderRadius:"0px",display:"flex",alignItems:"self-end"}}>
+                            <CardContent>
+                                  <Box sx={{paddingTop:"85px"}}>
+                                      <Typography sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={600}>Past Champions' Highlights Relive Epic Gaming Moments And Strategies.</Typography>
+                                      <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} py={1}>Lorem ipsum dolor sit amet consectetur. Porta magnis sed non in.</Typography>
+                                  </Box>
+                                  <Box sx={{color:"#BFBFBF",display:"flex",gap:"20px",fontSize:"20px",fontFamily:"'Raleway', sans-serif"}} py={1}>
+                                      <i class="fa-brands fa-youtube"></i>
+                                      <i class="fa-brands fa-twitch"></i>
+                                      <i class="fa-brands fa-discord"></i>
+                                  </Box>
+                            </CardContent>
+                        </Card>
+                    </Box>
+                    </div>
+                </Grid>
+
+                <Grid item xs={12} md={6} lg={4}>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" data-aos-duration="1000">
+                    <Box border={"2px solid #221C3E"} sx={{":hover":{borderColor:"#30D855"},transition:".5s"}}>
+                        <Card sx={{backgroundImage:`linear-gradient(rgba(13, 19, 38, 0),rgba(34, 28, 62, 0.7)),url(${tournament4})`,backgroundSize:"cover",borderRadius:"0px",display:"flex",alignItems:"self-end"}}>
+                            <CardContent>
+                                  <Box sx={{paddingTop:"85px"}} >
+                                      <Typography sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={600}>Compete And Conquer Join Upcoming Tournaments And Aim For Victory.</Typography>
+                                      <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} py={1}>Lorem ipsum dolor sit amet consectetur. Porta magnis sed non in.</Typography>
+                                  </Box>
+                                  <Box sx={{color:"#BFBFBF",display:"flex",gap:"20px",fontSize:"20px",fontFamily:"'Raleway', sans-serif"}} py={1}>
+                                      <i class="fa-brands fa-youtube"></i>
+                                      <i class="fa-brands fa-twitch"></i>
+                                      <i class="fa-brands fa-discord"></i>
+                                  </Box>
+                            </CardContent>
+                        </Card>
+                    </Box>
+                    </div>
+                </Grid>
+
+            </Grid>
+
+            <Box display="flex" gap={3} justifyContent="center" paddingTop={3} paddingBottom={5}>
+                <Button className='homebtn' sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+                  View More
+                </Button>
+            </Box>
+       </Container>
+  </Box>
+  );
+}
+
+export default Tournament;
