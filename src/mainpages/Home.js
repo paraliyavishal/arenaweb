@@ -9,10 +9,11 @@ import Tournament from '../components/home/Tournament';
 import Mastermind from '../components/home/Mastermind';
 import BecomeApart from '../components/home/BecomeApart';
 import Dreambigger from '../components/home/Dreambigger';
-import Journey from '../components/home/Journey';
 import Customersay from '../components/home/Customersay';
 import Gamingqueries from '../components/home/Gamingqueries';
 import Gamingsource from '../components/home/Gamingsource';
+import JourneyPixels from '../components/pages/gallery/JourneyPixels';
+import Footer from '../commoncomponets/footer/Footer';
 
 function Home() {
   return (
@@ -27,10 +28,11 @@ function Home() {
         <Mastermind />
         <BecomeApart />
         <Dreambigger />
+        <JourneyPixels />
         <Customersay />
         <Gamingqueries />
         <Gamingsource />
-
+        <Footer />
     </div>
   );
 }

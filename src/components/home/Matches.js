@@ -15,7 +15,7 @@ function Matches() {
     <Box sx={{backgroundColor:"#090329",height:"100%",paddingBottom:"50px"}}>
       <Container>
           <Box display={"flex"} justifyContent={"center"}>
-               <Box textAlign={"center"}>
+               <Box textAlign={"center"} paddingTop={5}>
                   <Typography fontWeight={900} sx={{fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},color:"#ffff",paddingTop:"50px",marginBottom:"20px",fontFamily:"'Rajdhani', sans-serif"}}>PLAN YOUR EPIC MATCHES</Typography>
                   <Typography fontWeight={500} sx={{fontSize:{lg:"28px",md:"28px",sm:"22px",xs:"20px"},color:"#30D855",marginBottom:"20px",fontFamily:"'Rajdhani', sans-serif"}}>Live Streaming</Typography>
                   <Typography  sx={{fontSize:{lg:"18px",md:"16px",sm:"14px",xs:"12px"},color:"#BFBFBF",fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </Typography>
@@ -49,7 +49,7 @@ function Matches() {
                            <Box sx={{backgroundColor:"#221C3E",}} >
                                <Typography py={5} sx={{textAlign:"center",color:"white",fontSize:{lg:"20px",md:"20px",sm:"16px",xs:"18px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={900}>Click To Join</Typography>
                                <Box sx={{display:"flex",justifyContent:"center"}}>
-                                 <Button sx={{margin:"20px 30px",width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},fontSize:{lg:"18px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Join Now</Button>
+                                 <Button sx={{margin:"19px 30px",width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>Join Now</Button>
                                </Box>
                            </Box>
                  </Box>
@@ -81,7 +81,7 @@ function Matches() {
                            <Box sx={{backgroundColor:"#221C3E",}} >
                                <Typography py={5} sx={{textAlign:"center",color:"white",fontSize:{lg:"20px",md:"20px",sm:"16px",xs:"18px"},fontFamily:"'Raleway', sans-serif"}} variant='h5' fontWeight={900}>Click To Join</Typography>
                                 <Box sx={{display:"flex",justifyContent:"center"}}>
-                                  <Button sx={{margin:"20px 30px",width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Join Now</Button>
+                                  <Button sx={{margin:"20px 30px",width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>Join Now</Button>
                                 </Box>
                            </Box>
                 </Box>

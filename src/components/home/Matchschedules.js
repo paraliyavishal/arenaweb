@@ -3,12 +3,12 @@ import React from 'react';
 import gamelogo1 from '../../assets/images/home/game-logo-1.webp';
 import gamelogo2 from '../../assets/images/home/game-logo-2.webp';
 import gamelogo3 from '../../assets/images/home/game-logo-3.webp';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import player1 from '../../assets/images/home/player-logo-1.webp';
 import player2 from '../../assets/images/home/player-logo-2.webp';
 import player3 from '../../assets/images/home/player-logo-3.webp';
 import player4 from '../../assets/images/home/player-logo-4.webp';
 import vs from '../../assets/images/home/vs.webp';
+import { useNavigate } from 'react-router-dom';
 
 const schedules = [
     {
@@ -70,12 +70,14 @@ const schedules = [
 ];
 
 function Matchschedules() {
+const navigate = useNavigate();
+
   return (
-    <Box sx={{ backgroundColor: "#090329", py: 5 }}>
+    <Box sx={{ backgroundColor: "#090329", py: 6 }}>
         <Container maxWidth='xl'>
-            <Box>
+            <Box sx={{paddingTop:"50px"}}>
                 <Typography textAlign="center" variant='h3' fontWeight={700} sx={{ color: "white",fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>MATCH SCHEDULES</Typography>
-                <Box>
+                <Box >
                     <Typography sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},color:"#BFBFBF",fontFamily:"'Raleway', sans-serif", textAlign: "center" }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                     </Typography>
@@ -138,12 +140,12 @@ function Matchschedules() {
                                         justifyContent: "center",
                                         alignItems: "center"
                                     }}>
-                                        <img src={player3} alt="Player 3" />
+                                        <img src={player3} alt="Player 3" className='player'/>
                                     </Box>
                                     <Typography textAlign="center" sx={{ color: "#BFBFBF", pt: 2 ,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Bare Killers</Typography>
                                 </Box>
                                 <Box>
-                                    <img src={vs} alt="VS" width="100%" />
+                                    <img src={vs} alt="VS" width="100%"  />
                                 </Box>
                                 <Box>
                                     <Box sx={{
@@ -155,7 +157,7 @@ function Matchschedules() {
                                         justifyContent: "center",
                                         alignItems: "center"
                                     }}>
-                                        <img src={player4} alt="Player 4" />
+                                        <img src={player4} alt="Player 4" className='player' />
                                     </Box>
                                     <Typography textAlign="center" sx={{ color: "#BFBFBF", pt: 2,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Pro Slayer</Typography>
                                 </Box>
@@ -196,7 +198,7 @@ function Matchschedules() {
                                                     alignItems: "center",
                                                     textAlign:"center"
                                                 }}>
-                                                    <img src={item.img1} alt=""/>
+                                                    <img src={item.img1} alt="" className='player'/>
                                                 </Box>
                                                 <Typography textAlign="center" sx={{ color: "#BFBFBF", pt: 2 ,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.name1}</Typography>
                                             </Box>
@@ -214,7 +216,7 @@ function Matchschedules() {
                                                     alignItems: "center",
                                                     textAlign:"center"
                                                 }}>
-                                                    <img src={item.img2} alt="" />
+                                                    <img src={item.img2} alt=""  className='player' />
                                                 </Box>
                                                 <Typography textAlign="center" sx={{ color: "#BFBFBF", pt: 2,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.name2}</Typography>
                                             </Box>
@@ -224,8 +226,8 @@ function Matchschedules() {
                             </Grid>
                         ))}
                     </Grid>
-                    <Box display="flex" gap={3} justifyContent="center" paddingTop={5}>
-                       <Button className='homebtn' sx={{ border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif" }}>Load More</Button>
+                    <Box display="flex" gap={3} justifyContent="center" paddingTop={5} paddingBottom={5}>
+                       <Button className='homebtn' onClick={() => navigate("/MatchSchedule")} sx={{ border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif" }}>View More</Button>
                     </Box>
                 </Box>
         </Container>

@@ -9,15 +9,17 @@ import tournament3 from '../../assets/images/home/tournament-3.webp'
 import tournament4 from '../../assets/images/home/tournament-4.webp'
 import tournament5 from '../../assets/images/home/tournament-5.webp'
 import tournament6 from '../../assets/images/home/tournament-6.webp'
+import { useNavigate } from 'react-router-dom';
 
 function Tournament() {
-
+    const navigate = useNavigate();
   return (
-  <Box sx={{backgroundImage:`linear-gradient(rgba(40, 17, 43, 0.7),rgba(40, 17, 43, 0.7)),url(${tournamentbg})`,height:"100%",width:"100%",objectFit:"cover",backgroundSize:"cover"}}>
+  <Box sx={{backgroundImage:`linear-gradient(rgba(40, 17, 43, 0.7),rgba(40, 17, 43, 0.7)),url(${tournamentbg})`,backgroundAttachment:"fixed",height:"100%",width:"100%",objectFit:"cover",backgroundSize:"cover"}}>
        <Container maxWidth="xl">
-            <Box pt={10}>
+            <Box pt={10} sx={{backgroundAttachment:"fixed"}}>
                 <Typography fontWeight={900} sx={{color:"white",fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontFamily:"'Rajdhani',sans-serif"}}>WATCH TOURNAMENT MATCHES</Typography>
-                <Typography py={2} sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's standard dummy text ever since the 1500s.</Typography>
+                <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's</Typography>
+                <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}> standard dummy text ever since the 1500s.</Typography>
             </Box>
             
             <Grid item container xs={12} spacing={3} py={3}>
@@ -148,8 +150,8 @@ function Tournament() {
 
             </Grid>
 
-            <Box display="flex" gap={3} justifyContent="center" paddingTop={3} paddingBottom={5}>
-                <Button className='homebtn' sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+            <Box display="flex" gap={3} justifyContent="center" paddingTop={3} sx={{paddingBottom:"90px"}}>
+                <Button className='homebtn' onClick={() => navigate("/MatchSchedule")} sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},textTransform:"unset",fontFamily:"'Raleway', sans-serif", border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
                   View More
                 </Button>
             </Box>

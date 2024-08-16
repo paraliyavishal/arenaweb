@@ -4,8 +4,11 @@ import shap from '../../assets/images/home/shapes-bg.png'
 import Facilities1 from '../../assets/images/home/facilities-1.png'
 import Facilities2 from '../../assets/images/home/facilities-2.png'
 import Facilities3 from '../../assets/images/home/facilities-3.png'
+import { useNavigate } from 'react-router-dom';
 
 function Facilities() {
+
+  const navigate = useNavigate();
   return (
     <div>
       <Box sx={{backgroundColor:"#100A2E"}}>
@@ -22,7 +25,7 @@ function Facilities() {
             <img src={shap} alt="" style={{height:"150px",width:"200px"}} className='bgroted'/>
           </Box> 
             <Container maxWidth='xl'>
-                    <Box sx={{marginTop:{lg:"-50px"},paddingTop:{md:"60px",sm:"60px",xs:"60px"}}}>
+                    <Box sx={{marginTop:{lg:"-100px"},paddingTop:{md:"10px",sm:"60px",xs:"60px"}}}>
                         <Typography sx={{color:"#FFF",fontWeight:"700",textAlign:"center",fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>FACILITIES WE OFFER</Typography>
                         <Typography sx={{color:"#BFBFBF",textAlign:"center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </Typography>
                         <Typography sx={{color:"#BFBFBF",textAlign:"center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>industry's standard dummy text ever since the 1500s, when an unknown printer took.</Typography>
@@ -72,8 +75,8 @@ function Facilities() {
                           </Grid>
                     </Grid>
                     
-                    <Box sx={{display:"flex",justifyContent:"center"}} py={5}>
-                        <Button className='homebtn' sx={{ border: '1px solid white', borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
+                    <Box sx={{display:"flex",justifyContent:"center",paddingBottom:"100px"}}>
+                        <Button className='homebtn' onClick={() => navigate("/About")} sx={{ border: '1px solid white', borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>
                             View More
                         </Button>
                     </Box>

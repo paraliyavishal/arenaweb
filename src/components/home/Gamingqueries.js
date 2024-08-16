@@ -18,7 +18,7 @@ function Gamingqueries() {
   
 
   return (
-    <Box sx={{ backgroundColor: "#100A2E", minHeight: '100%', py: 6 }}>
+    <Box sx={{ backgroundColor: "#100A2E", minHeight: '100%', py: 6, paddingBottom:"100px"}}>
     <Container maxWidth='xl'>
 
         <Box py={5}>
@@ -41,8 +41,9 @@ function Gamingqueries() {
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={6} display={"flex"} alignItems={"center"}>
-          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-duration="1000">
-            <Box padding={4} sx={{backgroundColor:"#221C3E"}}>
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="1000">
+            <Box padding={4} sx={{backgroundColor:"#221C3E",zIndex:"-1"}}>
+            
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{backgroundColor:"#221C3E",border:'none',}}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon sx={{color:"white"}}/>} aria-controls="panel1bh-content" id="panel1bh-header" sx={{border:'none',backgroundColor:"#221C3E",color:"white"}}>
                          <Typography sx={{ width:"100%",flexShrink: 0 ,fontWeight:"700",fontSize:{lg:"18px",md:"18px",sm:"16px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}><FiberManualRecordIcon sx={{fontSize:{xs:"15px",sm:"20px"}}}/> How is this works to extend this question with details However it is not ?</Typography>

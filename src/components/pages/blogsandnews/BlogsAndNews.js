@@ -1,10 +1,14 @@
+import { Box } from '@mui/material';
 import React from 'react';
+import Blogsherosection from './Blogsherosection';
+import SourceForGaming from './SourceForGaming';
 
 function BlogsAndNews() {
   return (
-    <div>
-    
-    </div>
+    <Box>
+      <Blogsherosection />
+      <SourceForGaming />
+    </Box>
   );
 }
 

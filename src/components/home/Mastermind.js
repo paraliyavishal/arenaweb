@@ -3,9 +3,12 @@ import React from 'react'
 import team1 from '../../assets/images/home/team-1.webp'
 import team2 from '../../assets/images/home/team-2.webp'
 import team3 from '../../assets/images/home/team-3.webp'
+import { useNavigate } from 'react-router-dom'
 
 
 function Mastermind() {
+
+  const navigate = useNavigate();
   return (
     <Box sx={{bgcolor:"#100a2e",paddingBottom:"80px"}}>
         <Box sx={{color:"#fff", textAlign:"center",paddingTop:"80px", paddingBottom:"80px"}}>
@@ -73,7 +76,7 @@ function Mastermind() {
             </Grid>
         </Grid>
             <Box display="flex" gap={3} justifyContent="center" paddingTop={6} >
-                <Button className='homebtn' sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+                <Button className='homebtn' onClick={() => navigate("/Team")} sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},textTransform:"unset",fontFamily:"'Raleway', sans-serif", border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
                   View More
                 </Button>
             </Box>

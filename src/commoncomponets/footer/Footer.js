@@ -1,15 +1,15 @@
 import { Box, Button, Container, Grid, Input, TextField, Typography } from '@mui/material';
 import React from 'react';
 import logo from '../../assets/images/home/logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function Footer() {
     const ariaLabel = { 'aria-label': 'description' };
-
+const navigate = useNavigate()
   return (
   <Box sx={{backgroundColor:"#090329"}}>
-     <Container>
+     <Container maxWidth="xl">
          <Grid item container xs={12} borderBottom={"1px solid #212529"} py={3}>
               <Grid item xs={12} lg={3} >
                    <Box sx={{display:"flex",justifyContent:{lg:"start",md:"center",xs:"center"}}}>
@@ -24,19 +24,19 @@ function Footer() {
               <Grid item xs={6} lg={3} alignItems={"end"} sx={{display:"flex",justifyContent:{lg:"center",md:"center",xs:"center"}}}>
                   <Box>
                      <Typography py={1} fontWeight={700} sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}}>Games</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>CS GO</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>PUBG</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>DOTA2</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>CALL OF DUTY</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>CS GO</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>PUBG</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>DOTA2</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>CALL OF DUTY</Typography>
                   </Box>
               </Grid>
               <Grid item xs={6} lg={3} sx={{display:"flex",justifyContent:{lg:"center",md:"center",xs:"center"}}} alignItems={"end"}>
                  <Box>
                      <Typography py={1} fontWeight={700} sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}}>Pages</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>About Us</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Testimonials</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Faq</Typography>
-                     <Typography sx={{color:"white",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Contact Us</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/About")}>About Us</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Testimonials")}>Testimonials</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Faq")}>Faq</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/ContactUs")}>Contact Us</Typography>
                   </Box>
               </Grid>
               <Grid item xs={12}  lg={3} sx={{display:"flex",justifyContent:{lg:"start",md:"center",xs:"center"}}}>
@@ -48,9 +48,11 @@ function Footer() {
                      </Box>
                      <Box>
                         <Typography sx={{color:"white",display:"flex",justifyContent:{lg:"start",md:"center"},fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"18px"},fontFamily:"'Raleway', sans-serif"}}  fontWeight={700} pt={5}>Subscribe to Our Newsletter to stay updated</Typography>
-                        <Input placeholder="Enter Your Email Address" inputProps={{ 'aria-label': 'email' }} sx={{display:"flex",justifyContent:{lg:"start",md:"center"},margin:"20px 0px",borderBottom:"1px solid white",'& .MuiInputBase-input::placeholder': {color: 'gray',opacity: 1},'& .MuiInputBase-input': {color: 'white',}}}/>
+                     <form action="">
+                        <Input placeholder="Enter Your Email Address" inputProps={{ 'aria-label': 'email' }} sx={{display:"flex",justifyContent:{lg:"start",md:"center"},margin:"20px 0px",borderBottom:"1px solid white",'& .MuiInputBase-input::placeholder': {color: 'gray',opacity: 1},'& .MuiInputBase-input': {color: 'white'}}} required/>
+                     </form>
                         <Box my={3}>
-                            <Button className='c-button c-button--gooey' sx={{borderRadius:"0px",overflow:"hidden",border:"1px solid #30d855",color:"#30d855",fontSize:"16px",fontWeight:"600",lineHeight:"38px",fontFamily:"'Raleway', sans-serif",padding:{xs:"8px 20px 8px 20px",sm:"8px 60px 8px 60px",md:"8px 30px 8px 30px",lg:"8px 30px 8px 30px"},"&:hover":{color:"black"}}}>Subscribe
+                            <Button className='c-button c-button--gooey' type='submit' sx={{borderRadius:"0px",overflow:"hidden",border:"1px solid #30d855",color:"#30d855",textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontWeight:"600",lineHeight:"38px",fontFamily:"'Raleway', sans-serif",padding:{xs:"8px 20px 8px 20px",sm:"8px 60px 8px 60px",md:"8px 30px 8px 30px",lg:"8px 30px 8px 30px"},"&:hover":{color:"black"}}}>Subscribe
                                <Box className='c-button__blobs'>
                                  <Box></Box>
                                  <Box></Box>

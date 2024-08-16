@@ -3,8 +3,10 @@ import React from 'react';
 import Dreambiggerbg from '../../assets/images/home/pricing.webp'
 import shap from '../../assets/images/home/shapes-bg.png'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import { useNavigate } from 'react-router-dom';
 
 function Dreambigger() {
+  const navigate = useNavigate();
   return (
     <Box sx={{backgroundColor:"#070929",height:"100%",paddingTop:"50px"}}>
           <Container maxWidth='xl'>
@@ -43,8 +45,8 @@ function Dreambigger() {
                                                  <FiberManualRecordIcon sx={{ fontSize: 34, color: '#fff', marginRight: 1}} />
                                                  Lorem Ipsum is simply dummy text of the printing.
                                              </Typography>
-                                         <Box marginTop={2}>
-                                            <Button className='c-button c-button--gooey' sx={{borderRadius:"0px",overflow:"hidden",border:"1px solid #30d855",color:"#30d855",fontSize:"16px",fontWeight:"600",lineHeight:"38px",fontFamily:"'Raleway', sans-serif",padding:{xs:"8px 30px 8px 30px",sm:"8px 70px 8px 70px",md:"8px 40px 8px 40px",lg:"8px 60px 8px 60px"},"&:hover":{color:"black"}}}>Get Started
+                                         <Box marginTop={2} display={"flex"} justifyContent={"center"}>
+                                            <Button className='c-button c-button--gooey' onClick={() => navigate("/Pricing")} sx={{borderRadius:"0px",overflow:"hidden",border:"1px solid #30d855",color:"#30d855",fontWeight:"600",lineHeight:"38px",textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif",padding:{xs:"8px 30px 8px 30px",sm:"8px 70px 8px 70px",md:"8px 40px 8px 40px",lg:"8px 60px 8px 60px"},"&:hover":{color:"black"}}}>Get Started
                                                <Box className='c-button__blobs'>
                                                  <Box></Box>
                                                  <Box></Box>
@@ -75,8 +77,8 @@ function Dreambigger() {
                                                  <FiberManualRecordIcon sx={{ fontSize: 34, color: '#fff', marginRight: 1}} />
                                                  Lorem Ipsum is simply dummy text of the printing.
                                              </Typography>
-                                         <Box marginTop={2}>
-                                            <Button className='c-button c-button--gooey' sx={{borderRadius:"0px",overflow:"hidden",border:"1px solid #30d855",color:"#30d855",fontSize:"16px",fontWeight:"600",lineHeight:"38px",fontFamily:"'Raleway', sans-serif",padding:{xs:"8px 30px 8px 30px",sm:"8px 70px 8px 70px",md:"8px 40px 8px 40px",lg:"8px 60px 8px 60px"},"&:hover":{color:"black"}}}>Get Started
+                                         <Box marginTop={2} display={"flex"} justifyContent={"center"}>
+                                            <Button className='c-button c-button--gooey' onClick={() => navigate("/Pricing")} sx={{borderRadius:"0px",overflow:"hidden",border:"1px solid #30d855",color:"#30d855",fontWeight:"600",lineHeight:"38px",textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},  fontFamily:"'Raleway', sans-serif",padding:{xs:"8px 30px 8px 30px",sm:"8px 70px 8px 70px",md:"8px 40px 8px 40px",lg:"8px 60px 8px 60px"},"&:hover":{color:"black"}}}>Get Started
                                                <Box className='c-button__blobs'>
                                                  <Box></Box>
                                                  <Box></Box>
