@@ -3,7 +3,7 @@ import React from 'react';
 import becomepart from '../../assets/images/home/become-part-bg.webp'
 import become from '../../assets/images/home/become.webp'
 import PlayCircleFilledRoundedIcon from '@mui/icons-material/PlayCircleFilledRounded';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function BecomeApart() {
@@ -33,8 +33,10 @@ function BecomeApart() {
                     </Grid>
                     <Grid xs={12} md={10} lg={6} item>
                         <Box sx={{backgroundImage:`linear-gradient(90deg,rgba(43,42,101,90),rgba(43,42,101,.0)),url(${become})`,justifyContent:"center",display:"flex",alignItems:"center",zIndex:"-1",width:"100%",backgroundSize:"cover",objectFit:"cover",height:"370px"}}>
-                             <Box >
-                               <PlayCircleFilledRoundedIcon className='loader' sx={{zIndex:"1",fontSize:"60px"}}/>
+                             <Box>
+                                <Link to={"https://www.youtube.com/watch?v=u4smAxDtbGc"}>
+                                 <PlayCircleFilledRoundedIcon className='loader' sx={{zIndex:"1",fontSize:"60px"}}/>
+                                </Link>
                              </Box>
                         </Box> 
                     </Grid>

@@ -9,6 +9,7 @@ import player2 from '../../assets/images/home/player-logo-2.webp'
 import player3 from '../../assets/images/home/player-logo-3.webp'
 import player4 from '../../assets/images/home/player-logo-4.webp'
 import vs from '../../assets/images/home/vs.webp'
+import { Link } from 'react-router-dom';
 
 function Matches() {
   return (
@@ -49,7 +50,7 @@ function Matches() {
                            <Box sx={{backgroundColor:"#221C3E",}} >
                                <Typography py={5} sx={{textAlign:"center",color:"white",fontSize:{lg:"20px",md:"20px",sm:"16px",xs:"18px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={900}>Click To Join</Typography>
                                <Box sx={{display:"flex",justifyContent:"center"}}>
-                                 <Button sx={{margin:"19px 30px",width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>Join Now</Button>
+                                 <Link style={{width:"100%",margin:"20px"}} to={"https://dashboard.squadco.com/login"}><Button sx={{width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>Join Now</Button></Link>
                                </Box>
                            </Box>
                  </Box>
@@ -80,9 +81,9 @@ function Matches() {
                      </Box>
                            <Box sx={{backgroundColor:"#221C3E",}} >
                                <Typography py={5} sx={{textAlign:"center",color:"white",fontSize:{lg:"20px",md:"20px",sm:"16px",xs:"18px"},fontFamily:"'Raleway', sans-serif"}} variant='h5' fontWeight={900}>Click To Join</Typography>
-                                <Box sx={{display:"flex",justifyContent:"center"}}>
-                                  <Button sx={{margin:"20px 30px",width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>Join Now</Button>
-                                </Box>
+                               <Box sx={{display:"flex",justifyContent:"center"}}>
+                                 <Link style={{width:"100%",margin:"20px"}} to={"https://dashboard.squadco.com/login"}><Button sx={{width:"100%",borderRadius:"0px",border:"1px solid #30D855",color:"#30D855","&:hover":{backgroundColor:"#30D855",color:"black"},textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>Join Now</Button></Link>
+                               </Box>
                            </Box>
                 </Box>
               </div>

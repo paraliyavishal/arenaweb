@@ -48,9 +48,9 @@ function Facilities() {
                     </Box>
                     <Grid xs={12} item container spacing={5} py={5} display={"flex"} justifyContent={"center"}>
                          {facilitiesoffer.map((item) => 
-                         <Grid item lg={4} md={6} sm={10} xs={12}>
+                         <Grid item lg={4} md={6} sm={10} xs={12} >
                               <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-duration="1000">
-                                <Box sx={{backgroundColor:"#221C3E","&:hover":{"& .text":{color:"#30D855"}}}} className='card'>
+                                <Box sx={{backgroundColor:"#221C3E",border:"1px solid #221C3E","&:hover":{"& .text":{color:"#30D855"},border:"1px solid #30D855",transition:".7s"}}} className='card'>
                                         <Box className='card2' >
                                             <Box sx={{display:"flex",justifyContent:"center"}}>
                                                <img src={item.svg} alt="" style={{padding:"35px 0px",height:"135px"}}/>

@@ -48,7 +48,7 @@ function Diveintodiverse() {
       <Grid item  xs={12} sm={12} md={12} lg={6}>
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
           <Box sx={{backgroundImage:`linear-gradient(rgba(40, 17, 43, 0.5),rgba(40, 17, 43, 0.5)),url(${item.bgimg})`,backgroundSize:"cover",backgroundRepeat:"no-repeat",zIndex:"-1",padding:"20px"}}>
-              <Box sx={{gap:"20px",textAlign:"end",}}>
+              <Box sx={{display:"flex",justifyContent:"end"}}>
                   <Button sx={{borderRadius:"0px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",backgroundColor:"rgba(107, 95, 254, 0.43)",color:"#fff",marginRight:"10px","&:hover":{backgroundColor:"rgba(49, 216, 85, 0.561)"}}}>Action</Button>
                   <Button sx={{borderRadius:"0px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",backgroundColor:"rgba(107, 95, 254, 0.43)",color:"#fff",marginRight:"10px","&:hover":{backgroundColor:"rgba(49, 216, 85, 0.561)"}}}>FPP</Button>
                   <Button sx={{borderRadius:"0px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",backgroundColor:"rgba(107, 95, 254, 0.43)",color:"#fff",marginRight:"10px","&:hover":{backgroundColor:"rgba(49, 216, 85, 0.561)"}}}>TPP</Button>

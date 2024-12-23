@@ -7,7 +7,7 @@ import facilogo3 from '../../assets/images/about/facilities-3.png'
 import facilogo4 from '../../assets/images/about/facilities-4.png'
 import facilogo5 from '../../assets/images/about/facilities-5.png'
 import facilogo6 from '../../assets/images/about/facilities-6.png'
-import WorldsofPlay from '../games/WorldsofPlay';
+import Diveintodiverse from '../home/Diveintodiverse';
 
 
 const facilities=[
@@ -64,7 +64,7 @@ function FacilitiesOffer() {
                          {facilities.map((item) =>
                          <Grid item lg={4} md={6} sm={10} xs={12}>
                               <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-duration="1000">
-                                <Box sx={{backgroundColor:"#221C3E","&:hover":{"& .text":{color:"#30D855"}}}} className='card'>
+                                <Box sx={{backgroundColor:"#221C3E",transition:".7s ",border:"1px solid #221C3E","&:hover":{"& .text":{color:"#30D855"},border:"1px solid #30D855"}}} className='card'>
                                         <Box className='card2' >
                                             <Box sx={{display:"flex",justifyContent:"center"}}>
                                                <img src={item.svg} alt="" style={{padding:"30px 0px"}}/>
@@ -88,7 +88,7 @@ function FacilitiesOffer() {
             </Container>
 
       </Box>
-        <WorldsofPlay/>
+        <Diveintodiverse />
   </Box>
   )
 }

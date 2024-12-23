@@ -1,23 +1,47 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import crafter1 from '../../assets/images/about/crafterimg1.webp'
 import crafter2 from '../../assets/images/about/crafterimg2.webp'
 import crafter3 from '../../assets/images/about/crafterimg3.webp'
 import { useNavigate } from 'react-router-dom';
+import CountUp from 'react-countup';
 
 function GameCrafters() {
 
 const navigate = useNavigate()
+const [startCounting, setStartCounting] = useState(false);
+const statsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartCounting(true);
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, []);
 
   return (
     <Box sx={{backgroundColor:"#100A2E",width:"100%",height:"100%",backgroundSize:"cover",paddingBottom:"30px"}}>
        <Box sx={{bgcolor:"#100a2e",color:"#fff", textAlign:"center",paddingTop:"80px",paddingBottom:{xs:"40px",lg:"10px"}}}>
-             <Box sx={{display:"flex",justifyContent:""}}>
+             <Box sx={{display:"flex",justifyContent:"center"}}>
                <Typography variant='h3' sx={{fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif",width:{lg:"50%",md:"40%",sm:"80%",xs:"100%"}}} py={1}>GAME CRAFTERS SHAPING DIGITAL REALMS</Typography>
              </Box>
-        <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</Typography>
-        <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply</Typography>
-        <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>dummy text of the printing and typesetting industry..</Typography>
+             <Box sx={{display:"flex",justifyContent:"center"}}>
+               <Typography sx={{width:{lg:"56%",xs:"100%"},color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry..</Typography>
+             </Box>
       </Box>
 
 
@@ -29,23 +53,32 @@ const navigate = useNavigate()
                        <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem
                         Ipsum is simply dummy text of the printing and typesetting industry..</Typography>
-                         <Box display={"flex"} justifyContent={"space-between"} paddingTop={5} alignItems={"center"}>
-                              <Box>
-                                   <Typography variant='h4' fontWeight={700} sx={{color:"white",fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani',sans-serif"}}>800</Typography>
+                         <Box ref={statsRef} display={"flex"} justifyContent={"space-between"} paddingTop={5} alignItems={"center"}>
+                              <Box >
+                                        <Typography
+                                          sx={{
+                                            fontWeight: 900,
+                                            color: "white",
+                                            fontSize: { lg: "48px", md: "48px", sm: "32px", xs: "28px" },
+                                            fontFamily: "'Rajdhani', sans-serif",
+                                          }}
+                                        >
+                                          {startCounting ? <CountUp end={800} duration={2} /> : "0"}
+                                        </Typography>
                                    <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Win-Matches</Typography>
                               </Box>
                               <Box>
                                    <Typography sx={{color:"#BFBFBF",fontFamily:"'Raleway', sans-serif"}} variant='h1' fontWeight={100} >|</Typography>
                               </Box>
                               <Box >
-                                   <Typography variant='h4' fontWeight={700} sx={{color:"white",fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani',sans-serif"}}>935</Typography>
+                                   <Typography variant='h4' fontWeight={700} sx={{color:"white",fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani',sans-serif"}}> {startCounting ? <CountUp end={935} duration={2} /> : "0"}</Typography>
                                    <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Matches Played</Typography>
                               </Box>
                               <Box>
                                  <Typography sx={{color:"#BFBFBF",fontFamily:"'Raleway', sans-serif"}} variant='h1' fontWeight={100} >|</Typography>
                               </Box>
                               <Box>
-                                   <Typography variant='h4' fontWeight={700} sx={{color:"white",fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani',sans-serif"}}>24</Typography>
+                                   <Typography variant='h4' fontWeight={700} sx={{color:"white",fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani',sans-serif"}}> {startCounting ? <CountUp end={24} duration={2} /> : "0"}</Typography>
                                    <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Tournament Won</Typography>
                               </Box>
                          </Box>

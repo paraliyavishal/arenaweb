@@ -1,13 +1,13 @@
 import React from 'react';
 import Gamesherosection from '../components/games/Gamesherosection';
-import WorldsofPlay from '../components/games/WorldsofPlay';
 import Footer from '../commoncomponets/footer/Footer';
+import Diveintodiverse from '../components/home/Diveintodiverse';
 
 function Games() {
   return (
     <div>
        <Gamesherosection />
-       <WorldsofPlay />
+       <Diveintodiverse />
        <Footer />
     </div>
   );

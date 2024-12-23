@@ -30,7 +30,7 @@ function Blogsherosection() {
       >
         <Link
           onClick={() => navigate("/")}
-          sx={{ color: '#FFFF', fontSize:{lg:"18px",md:"16px",sm:"14px",xs:"12px"}, fontWeight: '500', fontFamily: 'Raleway, sans-serif',textDecoration:"none","&:hover":{color:"#6B5FFE"},transition:".5s"}}
+          sx={{ color: '#FFFF',cursor:"pointer", fontSize:{lg:"18px",md:"16px",sm:"14px",xs:"12px"}, fontWeight: '500', fontFamily: 'Raleway, sans-serif',textDecoration:"none","&:hover":{color:"#6B5FFE"},transition:".5s"}}
         >
           Home
         </Link>
