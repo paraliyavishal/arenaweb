@@ -94,7 +94,7 @@ function Customersay() {
                                         </Box>
                                     ))}
                                 </Slider>
-                                <Box display="flex" justifyContent="center" mt={2} gap={2}>
+                                <Box display="flex" justifyContent="center" my={2} gap={2}>
                                     <ArrowBackIosIcon onClick={prevSlide} sx={{color:"white",padding:"10px",fontSize:"38px",display:"flex",textAlign:"center",border:"1px solid white",borderRadius:"20%","&:hover":{backgroundColor:"#30D855"}}}/>
                                     <ArrowForwardIosIcon onClick={nextSlide} sx={{color:"white",padding:"10px",fontSize:"38px",border:"1px solid white",borderRadius:"20%","&:hover":{backgroundColor:"#30D855"}}}/>
                                 </Box>

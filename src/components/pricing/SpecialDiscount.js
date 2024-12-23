@@ -19,7 +19,7 @@ function SpecialDiscount() {
                     <Typography sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",color:"#BFBFBF"}}>the industry's standard dummy text.</Typography>
                     </Box>
                         <Box paddingTop={1}>
-                             <Button className='homebtn' onClick={() => navigate("/Pricing")} sx={{ border: '1px solid white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", borderRadius: '0px', padding: '15px 25px',transition:"0.7s",'&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.1)"}, color: 'white', fontWeight: 600 }}>Refer A Friend</Button>
+                             <Button className='homebtn' onClick={() => navigate("/pricing")} sx={{ border: '1px solid white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", borderRadius: '0px', padding: '15px 25px',transition:"0.7s",'&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.1)"}, color: 'white', fontWeight: 600 }}>Refer A Friend</Button>
                         </Box>
                         <Box className='maintext' 
                             sx={{marginBottom:"-170px",paddingTop:"100px"}}>

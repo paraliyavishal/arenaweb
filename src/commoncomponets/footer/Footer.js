@@ -16,27 +16,27 @@ const navigate = useNavigate()
                       <img src={logo} alt="" width={"200px"} style={{backgroundSize:"cover",objectFit:"cover",padding:"20px 0px"}}/>
                    </Box>
                    <Box sx={{display:{xs:"flex",md:"flex",lg:"block"},paddingTop:{lg:"15  px",md:"0px"},justifyContent:{lg:"start",md:"center",xs:"center"}}}>
-                     <Typography sx={{color:"white",fontWeight:"700",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>STRATEGIZE.</Typography>
-                     <Typography sx={{color:"white",fontWeight:"700",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>PLAY.</Typography>
-                     <Typography sx={{color:"white",fontWeight:"700",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>CONQUER.</Typography>
+                     <Typography sx={{color:"white",fontWeight:"700",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"26px"},fontFamily:"'Rajdhani', sans-serif"}}>STRATEGIZE.</Typography>
+                     <Typography sx={{color:"white",fontWeight:"700",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"26px"},fontFamily:"'Rajdhani', sans-serif"}}>PLAY.</Typography>
+                     <Typography sx={{color:"white",fontWeight:"700",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"26px"},fontFamily:"'Rajdhani', sans-serif"}}>CONQUER.</Typography>
                    </Box>
               </Grid>
               <Grid item xs={6} lg={3} alignItems={"end"} sx={{display:"flex",justifyContent:{lg:"center",md:"center",xs:"center"}}}>
                   <Box>
                      <Typography py={1} fontWeight={700} sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}}>Games</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>CS GO</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>PUBG</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>DOTA2</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Games")}>CALL OF DUTY</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/games")}>CS GO</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/games")}>PUBG</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/games")}>DOTA2</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/games")}>CALL OF DUTY</Typography>
                   </Box>
               </Grid>
               <Grid item xs={6} lg={3} sx={{display:"flex",justifyContent:{lg:"center",md:"center",xs:"center"}}} alignItems={"end"}>
                  <Box>
                      <Typography py={1} fontWeight={700} sx={{color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}}>Pages</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/About")}>About Us</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Testimonials")}>Testimonials</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/Faq")}>Faq</Typography>
-                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/ContactUs")}>Contact Us</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/about")}>About Us</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/testimonials")}>Testimonials</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/faq")}>Faq</Typography>
+                     <Typography sx={{color:"white",cursor:"pointer",marginBottom:"10px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},transition:"0.5s",fontFamily:"'Raleway', sans-serif","&:hover":{color:"#6B5FFE"}}} onClick={() => navigate("/contact_us")}>Contact Us</Typography>
                   </Box>
               </Grid>
               <Grid item xs={12}  lg={3} sx={{display:"flex",justifyContent:{lg:"start",md:"center",xs:"center"}}}>

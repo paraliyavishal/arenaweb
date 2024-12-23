@@ -12,8 +12,9 @@ const navigate = useNavigate()
   return (
     <Box sx={{backgroundColor:"#100A2E",width:"100%",height:"100%",backgroundSize:"cover",paddingBottom:"30px"}}>
        <Box sx={{bgcolor:"#100a2e",color:"#fff", textAlign:"center",paddingTop:"80px",paddingBottom:{xs:"40px",lg:"10px"}}}>
-        <Typography variant='h3' sx={{fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif"}} pt={1}>GAME CRAFTERS SHAPING DIGITAL </Typography>
-        <Typography variant='h3' sx={{fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif"}} pb={1}>REALMS</Typography>
+             <Box sx={{display:"flex",justifyContent:""}}>
+               <Typography variant='h3' sx={{fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif",width:{lg:"50%",md:"40%",sm:"80%",xs:"100%"}}} py={1}>GAME CRAFTERS SHAPING DIGITAL REALMS</Typography>
+             </Box>
         <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</Typography>
         <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply</Typography>
         <Typography sx={{color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>dummy text of the printing and typesetting industry..</Typography>
@@ -49,11 +50,11 @@ const navigate = useNavigate()
                               </Box>
                          </Box>
                          <Box paddingTop={5}>
-                             <Button className='homebtn' onClick={() => navigate("/ContactUs")} sx={{ border: '1px solid white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", borderRadius: '0px', padding: '15px 25px',transition:"0.7s",'&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.1)"}, color: 'white', fontWeight: 600 }}>Contact Us</Button>
+                             <Button className='homebtn' onClick={() => navigate("/contact_us")} sx={{ border: '1px solid white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", borderRadius: '0px', padding: '15px 25px',transition:"0.7s",'&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.1)"}, color: 'white', fontWeight: 600 }}>Contact Us</Button>
                          </Box>
                   </Box>
              </Grid>
-             <Grid item xs={12} sm={10} md={8} lg={6} paddingTop={5} sx={{display:{lg:"flex",md:"flex",sm:"flex",xs:"block"},justifyContent:{md:"center",sm:"center",xs:"center"}}} alignItems={"center"}>
+             <Grid item xs={12} sm={10} md={8} lg={6} paddingTop={5} sx={{display:{lg:"flex",md:"none",sm:"none",xs:"none"},justifyContent:{md:"center",sm:"center",xs:"center"}}} alignItems={"center"}>
                   <Box >
                       <Box gap={3} alignItems={"center"} sx={{display:{lg:"flex",md:"flex",sm:"flex",xs:"block"},justifyContent:{md:"start",sm:"center",xs:"center"}}}>
                            <Box textAlign={"center"} padding={"10px 0px 40px 0px"}>

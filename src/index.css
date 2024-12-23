@@ -27,7 +27,7 @@ code {
 
 /* VISHAL */
 
-.homebtn {
+/* .homebtn {
   --border-radius: 0px;
   --border-width: 2px;
   appearance:none;
@@ -50,7 +50,7 @@ code {
   width: 100%;
   height: 100%;
   padding: var(--border-width);
-  /* border-radius: var(--border-radius); */
+  
   background-image: conic-gradient(
      #488cfb,
      #29dbbc,
@@ -91,7 +91,7 @@ code {
  
  .homebtn:active {
   --border-width: 5px;
- }
+ } */
 
  /* Hide Slick Slider Previous and Next Arrows */
 .slick-prev,
@@ -162,7 +162,7 @@ code {
 }
 
 
-.card {
+/* .card {
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 10px;
   transition: all .3s;
@@ -182,7 +182,7 @@ code {
 
 .card:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-}
+} */
 
 
 .css-1cfm3jg-MuiGrid-root>.MuiGrid-item {
@@ -276,8 +276,9 @@ code {
 }
 
 .card-img:hover {
-  transform: scale(1.05) rotate(4deg);
-  transition: all .4s ease;
+  transform: scale(1.05) rotate(1.5deg);
+  transition: all .7s ease;
+  overflow: hidden;
 }
 
 .icon:hover{

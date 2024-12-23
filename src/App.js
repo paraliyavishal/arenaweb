@@ -30,18 +30,18 @@ function App() {
 
        <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/Games' element={<Games/>}/>
-            <Route path='/Pricing' element={<Pricing/>}/>
-            <Route path='/About' element={<About/>}/>
-            <Route path='/MatchSchedule' element={<MatchSchedule/>}/>
-            <Route path='/BlogsAndNews' element={<BlogsAndNews/>}/>
-            <Route path='/Testimonials' element={<Testimonials/>}/>
-            <Route path='/Gallery' element={<Gallery/>}/>
-            <Route path='/Faq' element={<Faq/>}/>
-            <Route path='/Team' element={<Team/>}/>
-            <Route path='/ContactUs' element={<ContactUs/>}/>
-            <Route path='/ComingSoon' element={<ComingSoon/>}/>
-            <Route path='/PageNotFound' element={<PageNotFound/>}/>
+            <Route path='/games' element={<Games/>}/>
+            <Route path='/pricing' element={<Pricing/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/match_schedule' element={<MatchSchedule/>}/>
+            <Route path='/blogs_and_news' element={<BlogsAndNews/>}/>
+            <Route path='/testimonials' element={<Testimonials/>}/>
+            <Route path='/gallery' element={<Gallery/>}/>
+            <Route path='/faq' element={<Faq/>}/>
+            <Route path='team' element={<Team/>}/>
+            <Route path='/contact_us' element={<ContactUs/>}/>
+            <Route path='/coming_soon' element={<ComingSoon/>}/>
+            <Route path='/page_not_found' element={<PageNotFound/>}/>
        </Routes>
     </div>
   );  

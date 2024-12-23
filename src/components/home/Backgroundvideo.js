@@ -83,22 +83,21 @@ function  Backgroundvideo() {
         controls={false}
       />
       <Header />
-      <Box display="flex" justifyContent="center" width="100%" height="100%" textAlign="center" alignItems="end" paddingTop={"115px"} marginTop={"85px"}>
+      <Box display="flex" justifyContent="center" width="100%" height="100%" textAlign="center" alignItems="end" pt={12}>
         <Box textAlign="center" width="100%">
-              <Typography sx={{display:"flex",justifyContent:"center",textAlign:"center",color: 'white', zIndex: 1, lineHeight:"40px",fontWeight: 700,fontSize:{lg:"65px",md:"60px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani', sans-serif"}}>
-                GAME ON! YOUR GATEWAY TO INFINITE 
-              </Typography>
-              <Typography sx={{display:"flex",justifyContent:"center",textAlign:"center",color: 'white', zIndex: 1, fontWeight: 700,fontSize:{lg:"65px",md:"60px",sm:"34px",xs:"34px"},fontFamily:"'Rajdhani', sans-serif"}}>
-                ADVENTURES
-              </Typography>
+              <Box sx={{display:"flex",justifyContent:"center",}}>
+                  <Typography sx={{width:"90%",color: 'white', zIndex: 1,fontWeight: 700,fontSize:{lg:"65px",md:"60px",sm:"34px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>
+                    GAME ON! YOUR GATEWAY TO INFINITE ADVENTURES
+                  </Typography>
+              </Box>
               <Typography sx={{ color: 'white', zIndex: 1, fontWeight: 600,fontSize:{lg:"28px",md:"28px",sm:"24px",xs:"20px"},fontFamily:"'Rajdhani', sans-serif"}} py={1} >
                 UNLEASH YOUR INNER CHAMPION
               </Typography>
-              <Box  gap={3} justifyContent="center" sx={{display:{lg:"flex",md:"flex",sm:"block",xs:"block"},paddingTop:{lg:"20px",md:"30px",sm:"10px",xs:"0px"},marginBottom:"80px"}}>
-                    <Button className='homebtn' sx={{textTransform:"unset",marginBottom:{sm:"10px",xs:"5px"},backgroundColor:"#221C3E",border: '1px solid white', borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}>
+              <Box  gap={4} justifyContent="center" sx={{display:"flex",paddingTop:{lg:"20px",md:"30px",sm:"10px",xs:"0px"},marginBottom:"80px"}}>
+                    <Button className='' sx={{textTransform:"unset",marginBottom:{sm:"10px",xs:"5px"},backgroundColor:"#221C3E", borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: 'transparent',border:"1px solid white",transition:".5s"}, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}>
                       Become a Member
                     </Button>
-                    <Button className='homebtn' onClick={() => navigate("/ContactUs")} sx={{marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif" }}>
+                    <Button className='' onClick={() => navigate("/contact_us")} sx={{marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid #221C3E  ",transition:".5s"}, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif" }}>
                       Contact Us
                     </Button>
               </Box>

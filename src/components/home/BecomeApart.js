@@ -20,10 +20,10 @@ function BecomeApart() {
                                <Typography fontWeight={700} sx={{color:"white",fontSize:{lg:"48px",md:"48px",sm:"40px",xs:"28px"},fontFamily:"'Rajdhani', sans-serif"}}>Become A Part Of Us</Typography>
                                <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} my={2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's standard dummy text ever since the 1500s,</Typography>
                                <Box  gap={3} justifyContent="start" sx={{display:{lg:"flex",md:"flex",sm:"block",xs:"block"},paddingTop:{lg:"30px",md:"30px",sm:"10px",xs:"0px"}}}>
-                                 <Button className='homebtn' sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",marginBottom:{sm:"10px",xs:"5px"},display:"flex",justifyContent:{xs:"center"},backgroundColor:"#221C3E",border: '1px solid white',textTransform:"unset", borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
-                                   Become a Member
-                                 </Button>
-                                 <Button className='homebtn' onClick={() => navigate("/ContactUs")} sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px',textTransform:"unset", '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+                                 <Button className='' sx={{textTransform:"unset",transition: "0.7s",marginBottom:{sm:"10px",xs:"5px"},backgroundColor:"#221C3E", borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: 'transparent',border:"1px solid white",transition:".5s"}, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}>
+                                    Become a Member
+                                  </Button>
+                                 <Button onClick={() => navigate("/contact_us")} sx={{transition: "0.7s",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px',textTransform:"unset", '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
                                    Contact Us
                                  </Button>
                                </Box>

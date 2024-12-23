@@ -59,13 +59,13 @@ function Header() {
                     <ListItem button component={NavLink} to="/">
                       <ListItemText primary="Home" />
                     </ListItem>
-                    <ListItem button component={NavLink} to="/Games">
+                    <ListItem button component={NavLink} to="/games">
                       <ListItemText primary="Games" />
                     </ListItem>
-                    <ListItem button component={NavLink} to="/Pricing">
+                    <ListItem button component={NavLink} to="/pricing">
                       <ListItemText primary="Pricing" />
                     </ListItem>
-                    <ListItem button component={NavLink} to="/About">
+                    <ListItem button component={NavLink} to="/about">
                       <ListItemText primary="About" />
                     </ListItem>
                     <ListItem button component={NavLink}   onClick={handleSubmenuToggle} >
@@ -77,31 +77,31 @@ function Header() {
                     {submenuOpen && (
                       <Box sx={{backgroundColor: "#100A2E",padding: "8px 0",color: "#fff",position: "relative"}}>
                         <List>
-                          <ListItem button component={NavLink} to="/MatchSchedule">
+                          <ListItem button component={NavLink} to="/match_schedule">
                             <ListItemText primary="Match Schedule" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/BlogsAndNews">
+                          <ListItem button component={NavLink} to="/blogs_and_news">
                             <ListItemText primary="Blogs and News" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/Testimonials">
+                          <ListItem button component={NavLink} to="/testimonials">
                             <ListItemText primary="Testimonials" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/Gallery">
+                          <ListItem button component={NavLink} to="/gallery">
                             <ListItemText primary="Gallery" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/Faq">
+                          <ListItem button component={NavLink} to="/faq">
                             <ListItemText primary="FAQ" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/Team">
+                          <ListItem button component={NavLink} to="/team">
                             <ListItemText primary="Team" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/ContactUs">
+                          <ListItem button component={NavLink} to="/contact_us">
                             <ListItemText primary="Contact Us" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/ComingSoon">
+                          <ListItem button component={NavLink} to="/coming_soon">
                             <ListItemText primary="Coming Soon" />
                           </ListItem>
-                          <ListItem button component={NavLink} to="/404">
+                          <ListItem button component={NavLink} to="/page_not_found">
                             <ListItemText primary="404" />
                           </ListItem>
                         </List>
@@ -119,17 +119,17 @@ function Header() {
                       ":before": {content: '""',position: "absolute",height: "5px",width: "0%",backgroundColor: "white",bottom: "0",left: "0",transition: "width 0.3s",},
                       ":hover:before": {width: "100%",},"&:hover":{color:"#6B5FFE"}
                     }}>Home</Typography>
-                  <Typography color="inherit" component={NavLink} to="/Games" mx={{ lg: 3, xs: 1.5 }}
+                  <Typography color="inherit" component={NavLink} to="/games" mx={{ lg: 3, xs: 1.5 }}
                     sx={{textDecoration: "none",transition: "0.6s",color: "inherit",fontWeight:"600",padding:"20px 0px",position: "relative",display: "inline-block",
                       ":before": {content: '""',position: "absolute",height: "5px",width: "0%",backgroundColor: "white",bottom: "0",left: "0",transition: "width 0.3s",},
                       ":hover:before": {width: "100%",},"&:hover":{color:"#6B5FFE"}
                     }}>Games</Typography>
-                  <Typography color="inherit" component={NavLink} to="/Pricing" mx={{ lg: 3, xs: 1.5 }}
+                  <Typography color="inherit" component={NavLink} to="/pricing" mx={{ lg: 3, xs: 1.5 }}
                     sx={{textDecoration: "none",transition: "0.6s",color: "inherit",fontWeight:"600",padding:"20px 0px",position: "relative",display: "inline-block",
                       ":before": {content: '""',position: "absolute",height: "5px",width: "0%",backgroundColor: "white",bottom: "0",left: "0",transition: "width 0.3s",},
                       ":hover:before": {width: "100%",},"&:hover":{color:"#6B5FFE"}
                     }}>Pricing</Typography>
-                  <Typography color="inherit" component={NavLink} to="/About" mx={{ lg: 3, xs: 1.5 }}
+                  <Typography color="inherit" component={NavLink} to="/about" mx={{ lg: 3, xs: 1.5 }}
                     sx={{textDecoration: "none",transition: "0.6s",color: "inherit",fontWeight:"600",padding:"20px 0px",position: "relative",display: "inline-block",
                       ":before": {content: '""',position: "absolute",height: "5px",width: "0%",backgroundColor: "white",bottom: "0",left: "0",transition: "width 0.3s",},
                       ":hover:before": {width: "100%",},"&:hover":{color:"#6B5FFE"}
@@ -145,18 +145,18 @@ function Header() {
                   }}
                   >Pages<ArrowDropDownRoundedIcon sx={{ marginLeft: 1 }} /></Typography>
                 <Box className="submenu" sx={{display:"none",position: "absolute",top: "100%",left: "0%",width: "230px",color: "#fff",cursor:"pointer",backgroundColor: "#100A2E",padding: "8px 0",zIndex: 10,}}>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/MatchSchedule")}>Match Schedule</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/BlogsAndNews")}>Blogs and News</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/Testimonials")}>Testimonials</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/Gallery")}>Gallery</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/Faq")}>FAQ</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/Team")}>Team</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/ContactUs")}>Contact Us</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/ComingSoon")}>Coming Soon</Typography>
-                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/PageNotFound")}>404</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/match_schedule")}>Match Schedule</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/blogs_and_news")}>Blogs and News</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/testimonials")}>Testimonials</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/gallery")}>Gallery</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/faq")}>FAQ</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/team")}>Team</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/contact_us")}>Contact Us</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/coming_soon")}>Coming Soon</Typography>
+                  <Typography sx={{ padding: "8px 16px",transition:".7s","&:hover":{color:"#6B5FFE"} }} onClick={() => navigate("/page_not_found")}>404</Typography>
                 </Box>
               </Box>
-                <Button className='c-button c-button--gooey' onClick={() => navigate("/ContactUs")}
+                <Button className='c-button c-button--gooey' onClick={() => navigate("/contact_us")}
                   sx={{borderRadius: "0px",overflow: "hidden",textTransform: "unset",border: "1px solid #30d855",color: "#30d855",fontSize: "16px",fontWeight: "600",lineHeight: "38px",fontFamily: "'Raleway', sans-serif",padding: "5px 30px",
                     "&:hover": { color: "black" },
                   }}

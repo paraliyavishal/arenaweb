@@ -83,7 +83,7 @@ function Aboutherosection() {
 };
 
   return (
-    <Box sx={{backgroundImage:`linear-gradient(rgba(40, 17, 43, 0.541),rgba(40, 17, 43, 0.521)),url(${bgimg})`,backgroundAttachment:"fixed",paddingBottom:"4px",paddingTop:"10px"}}>
+    <Box sx={{backgroundImage:`linear-gradient(rgba(40, 17, 43, 0.541),rgba(40, 17, 43, 0.521)),url(${bgimg})`,backgroundSize:"cover",backgroundAttachment:"fixed",paddingBottom:"4px",paddingTop:"10px"}}>
       <Header />
     <Box alignItems={"center"} sx={{width:"100%",height:"100%",backgroundRepeat:"no-repeat",display:"flex",justifyContent:"center",textAlign:"center",backgroundPosition:"center",backgroundSize:"cover"}}>
    <Box sx={{marginTop:"200px",paddingBottom:"55px"}}>
