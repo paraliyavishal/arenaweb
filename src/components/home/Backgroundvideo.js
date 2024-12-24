@@ -97,10 +97,10 @@ function  Backgroundvideo() {
                     UNLEASH YOUR INNER CHAMPION
                   </Typography>
                   <Box  gap={4} justifyContent="center" sx={{display:{lg:"flex",sm:"block",xs:"block"},paddingTop:{lg:"20px",md:"30px",sm:"10px",xs:"0px"},marginBottom:"80px"}}>
-                    <Button className='' sx={{width:{lg:"15%",sm:"20%",xs:"100%"},textTransform:"unset",marginBottom:{sm:"10px",xs:"5px"},backgroundColor:"#221C3E", borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: 'transparent',border:"1px solid white",transition:".5s"}, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}>
+                    <Button className='' sx={{width:{lg:"18%",sm:"20%",xs:"100%"},textTransform:"unset",marginBottom:{sm:"10px",xs:"5px"},backgroundColor:"#221C3E", borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: 'transparent',border:"1px solid white",transition:".5s"}, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}>
                       Become a Member
                     </Button>
-                    <Button className='' onClick={() => navigate("/contact_us")} sx={{width:{lg:"15%",sm:"20%",xs:"100%"},marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid #221C3E  ",transition:".5s"}, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif" }}>
+                    <Button className='' onClick={() => navigate("/contact_us")} sx={{width:{lg:"18%",sm:"20%",xs:"100%"},marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid #221C3E  ",transition:".5s"}, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif" }}>
                       Contact Us
                     </Button>
                   </Box>

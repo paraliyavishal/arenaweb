@@ -24,21 +24,20 @@ const divers = [
 {
   bgimg:games3,
   logo:gameslogo3,
-  text:"Showcase An Extensive Game Collection For Endless Fun.",
+  text:"Foster Connections Among Players In Your Gaming Community.",
 },
 {
   bgimg:games4,
   logo:gameslogo4,
-  text:"Foster Connections Among Players In Your Gaming Community.",
+  text:"Showcase An Extensive Game Collection For Endless Fun.",
 },
 ]
 function Diveintodiverse() {
   return (
   <Box sx={{bgcolor:"#100a2e",paddingBottom:"40px"}}>
       <Box sx={{bgcolor:"#100a2e",color:"#fff", textAlign:"center",paddingTop:"80px", paddingBottom:"80px"}}>
-        <Typography sx={{fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontWeight:"700",lineHeight:"80px",fontFamily:"'Rajdhani',sans-serif"}}>DIVE INTO DIVERSE WORLDS OF PLAY</Typography>
+        <Typography sx={{fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif"}}>DIVE INTO DIVERSE WORLDS OF PLAY</Typography>
         <Typography sx={{color:"#BFBFBFBF",lineHeight:"22px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</Typography>
-        <Typography sx={{color:"#BFBFBFBF",lineHeight:"22px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>standard dummy text.</Typography>
       </Box>
 
   <Container maxWidth="xl">
