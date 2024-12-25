@@ -50,7 +50,12 @@ function BecomeApart() {
                       fontWeight={700}
                       sx={{
                         color: "white",
-                        fontSize: {lg:"48px",md:"48px",sm:"40px",xs:"28px",},
+                        fontSize: {
+                          lg: "48px",
+                          md: "48px",
+                          sm: "40px",
+                          xs: "28px",
+                        },
                         fontFamily: "'Rajdhani', sans-serif",
                       }}
                     >
@@ -59,7 +64,12 @@ function BecomeApart() {
                     <Typography
                       sx={{
                         color: "#BFBFBF",
-                        fontSize: {lg:"16px",md:"16px",sm:"14px",xs:"12px",},
+                        fontSize: {
+                          lg: "16px",
+                          md: "16px",
+                          sm: "14px",
+                          xs: "12px",
+                        },
                         fontFamily: "'Raleway', sans-serif",
                       }}
                       my={2}
@@ -72,16 +82,31 @@ function BecomeApart() {
                       gap={3}
                       justifyContent="start"
                       sx={{
-                        display: {lg:"flex",md:"flex",sm:"flex",xs:"flex",},
-                        paddingTop: {lg:"30px",md:"30px",sm: "10px",xs:"0px",},
+                        display: {
+                          lg: "flex",
+                          md: "flex",
+                          sm: "flex",
+                          xs: "flex",
+                        },
+                        paddingTop: {
+                          lg: "30px",
+                          md: "30px",
+                          sm: "10px",
+                          xs: "0px",
+                        },
                       }}
                     >
                       <Button
                         onClick={() => navigate("/")}
                         sx={{
-                          width: { lg: "45%",md:"35%", sm: "45%", xs: "50%" },
+                          width: { lg: "45%", md: "35%", sm: "45%", xs: "50%" },
                           transition: "0.7s",
-                          fontSize: {lg:"16px",md:"16px",sm:"14px",xs:"12px",},
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
                           fontFamily: "'Raleway', sans-serif",
                           marginBottom: { sm: "10px", xs: "5px" },
                           border: "1px solid white",
@@ -101,9 +126,14 @@ function BecomeApart() {
                       <Button
                         onClick={() => navigate("/contact_us")}
                         sx={{
-                          width: { lg: "45%",md:"20%", sm: "45%", xs: "50%" },
+                          width: { lg: "45%", md: "20%", sm: "45%", xs: "50%" },
                           transition: "0.7s",
-                          fontSize: {lg:"16px",md:"16px",sm:"14px",xs:"12px",},
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
                           fontFamily: "'Raleway', sans-serif",
                           marginBottom: { sm: "10px", xs: "5px" },
                           border: "1px solid white",

@@ -66,7 +66,7 @@ function Footer() {
                   color: "white",
                   fontWeight: "700",
                   fontSize: { lg: "48px", md: "48px", sm: "40px", xs: "26px" },
-                  fontFamily: "'Rajdhani', sans-serif",
+                  fontFamily: "'Rajdhani', sans-serif", 
                 }}
               >
                 CONQUER.

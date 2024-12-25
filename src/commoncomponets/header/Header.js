@@ -43,7 +43,6 @@ function Header() {
     setSubmenuOpen(false);
   };
 
-
   return (
     <AppBar
       position="static"

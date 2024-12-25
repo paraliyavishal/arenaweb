@@ -1,8 +1,8 @@
-import { Box } from '@mui/material'
-import React from 'react'
-import Galleryherosection from './Galleryherosection'
-import JourneyPixels from './JourneyPixels'
-import Footer from '../../../commoncomponets/footer/Footer'
+import { Box } from "@mui/material";
+import React from "react";
+import Galleryherosection from "./Galleryherosection";
+import JourneyPixels from "./JourneyPixels";
+import Footer from "../../../commoncomponets/footer/Footer";
 
 function Gallery() {
   return (
@@ -11,7 +11,7 @@ function Gallery() {
       <JourneyPixels />
       <Footer />
     </Box>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;

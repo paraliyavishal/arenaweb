@@ -98,7 +98,12 @@ function RavingReviews() {
                 >
                   <Typography
                     sx={{
-                      fontSize: {lg:"20px",md:"20px",sm:"18px",xs:"16px",},
+                      fontSize: {
+                        lg: "20px",
+                        md: "20px",
+                        sm: "18px",
+                        xs: "16px",
+                      },
                       lineHeight: "36px",
                       color: "white",
                       fontWeight: "500",
@@ -109,7 +114,12 @@ function RavingReviews() {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: {lg:"16px",md:"16px",sm:"14px",xs:"12px",},
+                      fontSize: {
+                        lg: "16px",
+                        md: "16px",
+                        sm: "14px",
+                        xs: "12px",
+                      },
                       color: "#BFBFBF",
                       paddingTop: "25px",
                       fontFamily: "'Raleway', sans-serif",
@@ -136,7 +146,12 @@ function RavingReviews() {
                           component="legend"
                           sx={{
                             color: "#fff",
-                            fontSize: {lg:"18px",md:"16px",sm:"14px",xs:"12px",},
+                            fontSize: {
+                              lg: "18px",
+                              md: "16px",
+                              sm: "14px",
+                              xs: "12px",
+                            },
                             fontFamily: "'Raleway', sans-serif",
                           }}
                         >
