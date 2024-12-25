@@ -79,7 +79,7 @@ function BecomeApart() {
                       <Button
                         onClick={() => navigate("/")}
                         sx={{
-                          width: { lg: "18%",md:"35%", sm: "45%", xs: "50%" },
+                          width: { lg: "45%",md:"35%", sm: "45%", xs: "50%" },
                           transition: "0.7s",
                           fontSize: {lg:"16px",md:"16px",sm:"14px",xs:"12px",},
                           fontFamily: "'Raleway', sans-serif",
@@ -101,7 +101,7 @@ function BecomeApart() {
                       <Button
                         onClick={() => navigate("/contact_us")}
                         sx={{
-                          width: { lg: "18%",md:"20%", sm: "45%", xs: "50%" },
+                          width: { lg: "45%",md:"20%", sm: "45%", xs: "50%" },
                           transition: "0.7s",
                           fontSize: {lg:"16px",md:"16px",sm:"14px",xs:"12px",},
                           fontFamily: "'Raleway', sans-serif",
