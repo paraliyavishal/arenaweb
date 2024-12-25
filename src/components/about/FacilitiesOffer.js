@@ -42,7 +42,7 @@ function FacilitiesOffer() {
   return (
     <Box>
      <Box sx={{backgroundColor:"#100A2E"}}>
-          <Box sx={{display:{lg:"flex",md:"none",xs:"none"},overflow:"hidden"}} gap={15} marginLeft={5} >
+          <Box sx={{display:{lg:"flex",md:"flex",xs:"flex"},overflow:"hidden"}} gap={15}>
             <img src={shap} alt="" style={{height:"150px",width:"200px"}} className='bgroted'/>
             <img src={shap} alt="" style={{height:"150px",width:"200px"}} className='bgroted1'/>
             <img src={shap} alt="" style={{height:"150px",width:"200px"}} className='bgroted'/>
@@ -67,11 +67,11 @@ function FacilitiesOffer() {
                                 <Box sx={{backgroundColor:"#221C3E",transition:".7s ",border:"1px solid #221C3E","&:hover":{"& .text":{color:"#30D855"},border:"1px solid #30D855"}}} className='card'>
                                         <Box className='card2' >
                                             <Box sx={{display:"flex",justifyContent:"center"}}>
-                                               <img src={item.svg} alt="" style={{padding:"30px 0px"}}/>
+                                               <img src={item.svg} alt="" style={{padding:"35px 0px",height:"135px"}}/>
                                             </Box> 
                                                <Typography sx={{textAlign:"center",color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={700} py={2}>{item.fild}</Typography>
                                                <Typography sx={{color:"#BFBFBF",textAlign:"center",padding:"20px 20px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem ipsum dolor sit ametcsectetur. Eu enim odio facilisis eu curabitur integer.</Typography>
-                                               <Typography className='text' py={3} sx={{marginTop:"4px",textAlign:"center",color:"#6B5FFE",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={600}>Learn More</Typography>
+                                               <Typography className='text' py={3} sx={{transition:".7s",marginTop:"4px",textAlign:"center",color:"#6B5FFE",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",cursor:"pointer"}} fontWeight={600}>Learn More</Typography>
                                         </Box>
                                 </Box>
                               </div>
@@ -80,7 +80,7 @@ function FacilitiesOffer() {
                     </Grid>
                     
                     <Box sx={{display:"flex",justifyContent:"center"}} py={5}>
-                        <Button sx={{ border: '1px solid white', borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
+                        <Button sx={{ border: '1px solid white',transition:".7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
                             View More
                         </Button>
                     </Box>

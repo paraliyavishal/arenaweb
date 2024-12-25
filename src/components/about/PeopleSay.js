@@ -68,8 +68,8 @@ function PeopleSay() {
                 <Typography sx={{ fontSize: { lg: "18px", md: "18px", sm: "16px", xs: "16px" }, fontFamily: "'Raleway', sans-serif", color: "#bfbfbf" }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                   has been the industry's standard dummy text.Lorem Ipsum is simply.</Typography>
                 <Box sx={{ paddingTop: "40px" }}>
-                  <Button className='homebtn' sx={{ border: '1px solid white', textTransform: "unset", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "12px" }, fontFamily: "'Raleway', sans-serif", borderRadius: '0px', padding: '15px 25px', '&:hover': { backgroundColor: '#221C3E', border: "1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
-                    View More
+                  <Button sx={{ border: '1px solid white',transition:".7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
+                      View More
                   </Button>
                 </Box>
               </Box>

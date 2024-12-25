@@ -13,12 +13,12 @@ function ComingSoon() {
                 <Typography sx={{fontSize:{lg:"65px",md:"65px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani', sans-serif"}}>WE ARE COMING SOON</Typography>
                 <Typography sx={{color:"#bfbfbf",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway',sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</Typography>
                 <Box justifyContent={'center'} width={"100%"} paddingTop={5} gap={4} sx={{display:{lg:"flex",md:"flex",sm:"flex",xs:"block"}}}>
-                    <Box marginBottom={3} textAlign={'center'}>
-                      <Button onClick={() => navigate("/")} sx={{fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},textTransform:"unset", fontFamily:"'Raleway',sans-serif",borderRadius: '0px',backgroundColor: '#221C3E', padding: '15px 25px',transition:"0.7s",'&:hover': {backgroundColor: 'transparent', border: '1px solid white',}, color: 'white' }}>Back To Home</Button>
-                    </Box>
-                    <Box marginBottom={5} textAlign={'center'} >
-                      <Button onClick={() => navigate("/contact_us")} sx={{ border: '1px solid white',fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},textTransform:"unset", fontFamily:"'Raleway',sans-serif",borderRadius: '0px', padding: '15px 25px',transition:"0.7s",'&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.1)"}, color: 'white' }}>Contact Us</Button>
-                    </Box>
+                    <Button onClick={() => navigate("/")} sx={{width:{lg:"18%",sm:"20%",xs:"100%"},transition: "0.7s",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px',textTransform:"unset", '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+                       Back to Home
+                     </Button>
+                    <Button onClick={() => navigate("/contact_us")} sx={{width:{lg:"18%",sm:"20%",xs:"100%"},transition: "0.7s",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px',textTransform:"unset", '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+                      Contact Us
+                    </Button>
                 </Box>
             </Box>
       </Box>

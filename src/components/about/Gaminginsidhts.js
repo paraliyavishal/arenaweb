@@ -18,7 +18,7 @@ function Gaminginsidhts() {
     <Box sx={{backgroundColor:"#221C3E",paddingBottom:"60px",paddingTop:"80px"}}>
     <Container maxWidth='xl'>
       <Box sx={{color:"white",textAlign:{lg:"start",md:"start",sm:"center",xs:"center"}}}>
-          <Typography sx={{fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontWeight:"750",fontFamily:"'Rajdhani', sans-serif"}} py={2}>YOUR SOURCE FOR GAMING INSIGHTS</Typography>
+          <Typography variant='h2' sx={{fontSize:{lg:"48px",md:"40px",sm:"32px",xs:"28px"},fontWeight:"800",fontFamily:"'Rajdhani', sans-serif"}} py={2}>YOUR SOURCE FOR GAMING INSIGHTS</Typography>
           <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting</Typography>
           <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>industry. Lorem Ipsum has been the industry's.</Typography>
       </Box>

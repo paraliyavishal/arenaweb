@@ -82,7 +82,6 @@ function  Backgroundvideo() {
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}
         controls={false}
       />
-      {/* <img src="https://images5.alphacoders.com/134/1347173.png" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }} alt="" /> */}
       <Header />
 
       <Box display="flex" justifyContent="center" width="100%" height="100%" textAlign="center" alignItems="end" pt={12}>
@@ -96,11 +95,11 @@ function  Backgroundvideo() {
                   <Typography sx={{ color: 'white', zIndex: 1, fontWeight: 600,fontSize:{lg:"28px",md:"28px",sm:"24px",xs:"20px"},fontFamily:"'Rajdhani', sans-serif"}} py={1} >
                     UNLEASH YOUR INNER CHAMPION
                   </Typography>
-                  <Box  gap={4} justifyContent="center" sx={{display:{lg:"flex",sm:"block",xs:"block"},paddingTop:{lg:"20px",md:"30px",sm:"10px",xs:"0px"},marginBottom:"80px"}}>
-                    <Button className='' sx={{width:{lg:"18%",sm:"20%",xs:"100%"},textTransform:"unset",marginBottom:{sm:"10px",xs:"5px"},backgroundColor:"#221C3E", borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: 'transparent',border:"1px solid white",transition:".5s"}, color: 'white', fontWeight: 600,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif"}}>
-                      Become a Member
+                  <Box  gap={4} justifyContent="center" sx={{display:{lg:"flex",sm:"flex",xs:"block"},paddingTop:{lg:"20px",md:"30px",sm:"10px",xs:"0px"},marginBottom:"80px"}}>
+                    <Button onClick={() => navigate("/")} sx={{width:{lg:"18%",sm:"25%",xs:"60%"},transition: "0.7s",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px',textTransform:"unset", '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
+                       Become a Member
                     </Button>
-                    <Button className='' onClick={() => navigate("/contact_us")} sx={{width:{lg:"18%",sm:"20%",xs:"100%"},marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid #221C3E  ",transition:".5s"}, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"},fontFamily:"'Raleway', sans-serif" }}>
+                    <Button onClick={() => navigate("/contact_us")} sx={{width:{lg:"18%",sm:"25%",xs:"60%"},transition: "0.7s",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", marginBottom:{sm:"10px",xs:"5px"},border: '1px solid white', borderRadius: '0px', padding: '15px 20px',textTransform:"unset", '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
                       Contact Us
                     </Button>
                   </Box>

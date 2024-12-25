@@ -50,14 +50,14 @@ function Facilities() {
                          {facilitiesoffer.map((item) => 
                          <Grid item lg={4} md={6} sm={10} xs={12} >
                               <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-duration="1000">
-                                <Box sx={{backgroundColor:"#221C3E",border:"1px solid #221C3E","&:hover":{"& .text":{color:"#30D855"},border:"1px solid #30D855",transition:".7s"}}} className='card'>
+                                <Box sx={{backgroundColor:"#221C3E",border:"1px solid #221C3E",cursor:"pointer","&:hover":{"& .text":{color:"#30D855"},border:"1px solid #30D855",transition:".7s"}}} className='card'>
                                         <Box className='card2' >
                                             <Box sx={{display:"flex",justifyContent:"center"}}>
                                                <img src={item.svg} alt="" style={{padding:"35px 0px",height:"135px"}}/>
                                             </Box> 
                                                <Typography sx={{textAlign:"center",color:"white",fontSize:{lg:"20px",md:"20px",sm:"18px",xs:"16px"},fontFamily:"'Raleway', sans-serif"}} fontWeight={700} py={2}>{item.fild}</Typography>
                                                <Typography sx={{color:"#BFBFBF",textAlign:"center",padding:"20px 20px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem ipsum dolor sit ametcsectetur. Eu enim odio facilisis eu curabitur integer.</Typography>
-                                               <Typography className='text' py={3} sx={{marginTop:"4px",textAlign:"center",color:"#6B5FFE",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",cursor:"pointer"}} onClick={() => navigate("/about")} fontWeight={600}>Learn More</Typography>
+                                               <Typography className='text' py={3} sx={{marginTop:"4px",textAlign:"center",color:"#6B5FFE",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",cursor:"pointer",transition:".7s"}} onClick={() => navigate("/about")} fontWeight={600}>Learn More</Typography>
                                         </Box>
                                 </Box>
                               </div>
@@ -66,7 +66,7 @@ function Facilities() {
                     </Grid>
                     
                     <Box sx={{display:"flex",justifyContent:"center",paddingBottom:"100px"}}>
-                        <Button onClick={() => navigate("/about")} sx={{ border: '1px solid white',transition: "0.7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>
+                        <Button onClick={() => navigate("/about")} sx={{ border: '1px solid white',transition: "0.7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif"}}>
                             View More
                         </Button>
                     </Box>

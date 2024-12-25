@@ -118,10 +118,11 @@ function Tournament() {
                 )}
               </Grid>
 
-            <Box display="flex" gap={3} justifyContent="center" paddingTop={3} sx={{paddingBottom:"90px"}}>
-                <Button onClick={() => navigate("/match_schedule")} sx={{transition: "0.7s",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},textTransform:"unset",fontFamily:"'Raleway', sans-serif", border: '1px solid white', borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600 }}>
-                  View More
+            <Box display="flex" gap={3} justifyContent="center" paddingTop={3} sx={{paddingBottom:"70px"}}>
+                <Button onClick={() => navigate("/match_schedule")} sx={{ border: '1px solid white',transition:".7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
+                    View More
                 </Button>
+                
             </Box>
        </Container>
   </Box>

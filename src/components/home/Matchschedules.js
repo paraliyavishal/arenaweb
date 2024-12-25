@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import gamelogo1 from '../../assets/images/home/game-logo-1.webp';
 import gamelogo2 from '../../assets/images/home/game-logo-2.webp';
 import gamelogo3 from '../../assets/images/home/game-logo-3.webp';
@@ -93,6 +93,9 @@ const matchCategory = [
 ]
 
 function Matchschedules() {
+
+const [selectedItem, setSelectedItem] = useState(null);
+
 const navigate = useNavigate();
 
   return (
@@ -112,24 +115,58 @@ const navigate = useNavigate();
             <Box>
                     
                 <Grid item container xs={12} sx={{display:"flex",justifyContent:"center",width:"100%",borderBottom:"2px solid #202256",paddingTop:"50px",marginBottom:"50px"}}>
-                         {matchCategory.map((item) => 
-                         <Grid item xs={12} sm={10} md={6} lg={3} sx={{paddingLeft:{lg:"30px",xs:"0px"}}}>
-                             <Box sx={{"&:hover":{backgroundColor:"#6B5FFE",transition:".7s"},}}>
-                                 <Typography sx={{color:"white",textAlign:"center",padding:"15px 0px",fontWeight:"600",fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.name}</Typography>
-                             </Box>
-                         </Grid>
-                         )}
+                {matchCategory.map((item, index) => (
+        <Grid
+          key={index}
+          item
+          xs={12}
+          sm={10}
+          md={6}
+          lg={3}
+          sx={{ paddingLeft: { lg: "30px", xs: "0px" } }}
+        >
+          <Box
+            onClick={() => setSelectedItem(index)} // Update selected item
+            sx={{
+              cursor: "pointer",
+              backgroundColor: selectedItem === index ? "#6B5FFE" : "inherit", // Apply red background if selected
+              "&:hover": {
+                backgroundColor: selectedItem === index ? "#6B5FFE" : "#6B5FFE",
+                transition: ".7s",
+              },
+            }}
+          >
+            <Typography
+              sx={{
+                color: "white",
+                textAlign: "center",
+                padding: "15px 0px",
+                fontWeight: "600",
+                fontSize: {
+                  lg: "16px",
+                  md: "16px",
+                  sm: "14px",
+                  xs: "12px",
+                },
+                fontFamily: "'Raleway', sans-serif",
+              }}
+            >
+              {item.name}
+            </Typography>
+          </Box>
+        </Grid>
+      ))}
                 </Grid>
 
                     <Grid container xs={12}>
                         {schedules.map((item, index) => (
-                            <Grid container item xs={12} key={index} sx={{ ':hover': { backgroundColor: "#2B2A65" },display:"flex",justifyContent:{xs:"center",sm:"center"},paddingTop:{xs:"20px",sm:"20px"},transition:"0.3s" }}>
-                                <Grid item xs={12} sm={10} md={6} lg={3} sx={{borderBottom:{xs:"none",sm:"none",md:"none",lg:"2px solid #221C3E"}}}>
+                            <Grid container item xs={12} key={index} sx={{ borderBottom:{xs:"2px solid #221C3E",sm:"2px solid #221C3E",md:"2px solid #221C3E",lg:"2px solid #221C3E"},':hover': { backgroundColor: "#2B2A65" },display:"flex",justifyContent:{xs:"center",sm:"center"},paddingTop:{xs:"20px",sm:"20px"},transition:"0.3s" }}>
+                                <Grid item xs={12} sm={10} md={4} lg={3} >
                                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                                         <img src={item.logo} alt={`Logo ${index}`} />
                                     </Box>
                                 </Grid>
-                                <Grid item xs={12} sm={10} md={6} lg={4} sx={{ display: "flex", alignItems: "center", justifyContent: "center",borderBottom:{xs:"none",sm:"none",md:"none",lg:"2px solid #221C3E"}}}>
+                                <Grid item xs={12} sm={10} md={4} lg={4} sx={{ display: "flex", alignItems: "center", justifyContent: "center"}}>
                                     <Box textAlign="center">
                                         <Typography sx={{ color: "#BFBFBF", py: 2 ,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.time}</Typography>
                                         <Box display="flex" alignItems="center" justifyContent="center" gap={3}>
@@ -139,40 +176,18 @@ const navigate = useNavigate();
                                         </Box>
                                     </Box>
                                 </Grid>
-                                <Grid item xs={12} sm={10} md={6} lg={5} sx={{borderBottom:{xs:"2px solid #221C3E",sm:"2px solid #221C3E",md:"2px solid #221C3E",lg:"2px solid #221C3E"}}}>
+                                <Grid item xs={12} sm={10} md={4} lg={5}>
                                     <Box p={2}>
-                                        <Box display="flex" justifyContent="space-around" alignItems="center" gap={2}>
+                                        <Box display="flex" justifyContent="space-around" alignItems="center">
                                             <Box>
-                                                <Box sx={{
-                                                    backgroundColor: "#414075",
-                                                    width: { lg: "120px", md: "120px", sm: "70px", xs: "40px" },
-                                                    height: { lg: "120px", md: "120px", sm: "70px", xs: "40px" },
-                                                    display: "flex",
-                                                    borderRadius: "50%",
-                                                    justifyContent: "center",
-                                                    alignItems: "center",
-                                                    textAlign:"center"
-                                                }}>
-                                                    <img src={item.img1} alt="" className='player'/>
-                                                </Box>
-                                                <Typography textAlign="center" sx={{ color: "#BFBFBF", pt: 2 ,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.name1}</Typography>
+                                                <img src={item.img1} alt="" className='player' style={{height:"70px",cursor:"pointer"}}/>
+                                                <Typography  sx={{ textAlign:"center",color: "#BFBFBF", pt: 2 ,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.name1}</Typography>
                                             </Box>
                                             <Box>
                                                 <img src={vs} alt="VS" width="100%" />
                                             </Box>
                                             <Box>
-                                                <Box sx={{
-                                                    backgroundColor: "#414075",
-                                                    width: { lg: "120px", md: "120px", sm: "70px", xs: "40px" },
-                                                    height: { lg: "120px", md: "120px", sm: "70px", xs: "40px" },
-                                                    display: "flex",
-                                                    borderRadius: "50%",
-                                                    justifyContent: "center",
-                                                    alignItems: "center",
-                                                    textAlign:"center"
-                                                }}>
-                                                    <img src={item.img2} alt=""  className='player' />
-                                                </Box>
+                                                <img src={item.img2} alt=""  className='player'  style={{height:"70px",cursor:"pointer"}}/>
                                                 <Typography textAlign="center" sx={{ color: "#BFBFBF", pt: 2,fontSize:{lg:"16x",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif",}}>{item.name2}</Typography>
                                             </Box>
                                         </Box>
@@ -182,7 +197,9 @@ const navigate = useNavigate();
                         ))}
                     </Grid>
                     <Box display="flex" gap={3} justifyContent="center" paddingTop={5} paddingBottom={5}>
-                       <Button onClick={() => navigate("/match_schedule")} sx={{ border: '1px solid white',transition: "0.7s", borderRadius: '0px', padding: '15px 30px', '&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.26)" }, color: 'white', fontWeight: 600,textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} ,fontFamily:"'Raleway', sans-serif" }}>View More</Button>
+                        <Button onClick={() => navigate("/match_schedule")} sx={{ border: '1px solid white',transition:".7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
+                            View More
+                        </Button>
                     </Box>
                 </Box>
         </Container>

@@ -169,7 +169,7 @@ function Digitalrealms() {
                                           padding: "15px 25px",
                                           transition: "0.7s",
                                           "&:hover": {
-                                            backgroundColor: "#221C3E",
+                                            backgroundColor: "#6B5FFE",
                                             border: "1px solid rgba(44,36,74,.1)",
                                           },
                                           color: "white",

@@ -30,7 +30,7 @@ function HomeBack() {
       sx={{
         position: 'fixed',
         bottom: 30,
-        right: 30,
+        right: 40,
         zIndex: 999,
         border: '2px solid #32D855',
         fontSize: '26px',

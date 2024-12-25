@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Home from './mainpages/Home';
-import Header from './commoncomponets/header/Header';
-import Footer from './commoncomponets/footer/Footer';
 import About from './mainpages/About'
 import Games from './mainpages/Games';
 import Pricing from './mainpages/Pricing';
-import Pages from './mainpages/Pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import BlogsAndNews from './components/pages/blogsandnews/BlogsAndNews';
 import MatchSchedule from './components/pages/matchschedule/MatchSchedule';
@@ -47,13 +44,6 @@ const handlePreloaderComplete = () => {
 
   return (
     <div>
-       {/* <Header /> */}
-       {/* <Home />  */}
-       {/* <Games /> */}
-       {/* <Pricing /> */}
-       {/* <About /> */}
-       {/* <Pages /> */}
-       {/* <Footer /> */}
         <HomeBack />
         <ScrollToTop />
        <Routes>

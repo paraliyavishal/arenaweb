@@ -37,10 +37,10 @@ const statsRef = useRef(null);
     <Box sx={{backgroundColor:"#100A2E",width:"100%",height:"100%",backgroundSize:"cover",paddingBottom:"30px"}}>
        <Box sx={{bgcolor:"#100a2e",color:"#fff", textAlign:"center",paddingTop:"80px",paddingBottom:{xs:"40px",lg:"10px"}}}>
              <Box sx={{display:"flex",justifyContent:"center"}}>
-               <Typography variant='h3' sx={{fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif",width:{lg:"50%",md:"40%",sm:"80%",xs:"100%"}}} py={1}>GAME CRAFTERS SHAPING DIGITAL REALMS</Typography>
+               <Typography variant='h3' sx={{fontSize:{lg:"48px",md:"48px",sm:"34px",xs:"34px"},fontWeight:"700",fontFamily:"'Rajdhani',sans-serif",width:{lg:"50%",md:"60%",sm:"80%",xs:"100%"}}} py={1}>GAME CRAFTERS SHAPING DIGITAL REALMS</Typography>
              </Box>
              <Box sx={{display:"flex",justifyContent:"center"}}>
-               <Typography sx={{width:{lg:"56%",xs:"100%"},color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry..</Typography>
+               <Typography sx={{width:{lg:"56%",md:"70%",xs:"100%"},color:"#BFBFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem Ipsum is simply dummy text of the printing and typesetting industry..</Typography>
              </Box>
       </Box>
 
@@ -53,7 +53,7 @@ const statsRef = useRef(null);
                        <Typography sx={{color:"#BFBFBF",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}} >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took.Lorem
                         Ipsum is simply dummy text of the printing and typesetting industry..</Typography>
-                         <Box ref={statsRef} display={"flex"} justifyContent={"space-between"} paddingTop={5} alignItems={"center"}>
+                         <Box ref={statsRef} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
                               <Box >
                                         <Typography
                                           sx={{
@@ -83,11 +83,13 @@ const statsRef = useRef(null);
                               </Box>
                          </Box>
                          <Box paddingTop={5}>
-                             <Button className='homebtn' onClick={() => navigate("/contact_us")} sx={{ border: '1px solid white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif", borderRadius: '0px', padding: '15px 25px',transition:"0.7s",'&:hover': { backgroundColor: '#221C3E',border:"1px solid rgba(44,36,74,.1)"}, color: 'white', fontWeight: 600 }}>Contact Us</Button>
+                             <Button onClick={() => navigate("/contact_us")} sx={{ border: '1px solid white',transition:".7s", borderRadius: '0px', padding: '10px 20px', '&:hover': { backgroundColor: '#6B5FFE',border:"1px solid rgba(44,36,74,.26)" }, color: 'white',textTransform:"unset",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"12px"},fontFamily:"'Raleway', sans-serif"}}>
+                                Contact Us
+                              </Button>
                          </Box>
                   </Box>
              </Grid>
-             <Grid item xs={12} sm={10} md={8} lg={6} paddingTop={5} sx={{display:{lg:"flex",md:"none",sm:"none",xs:"none"},justifyContent:{md:"center",sm:"center",xs:"center"}}} alignItems={"center"}>
+             <Grid item xs={12} sm={10} md={8} lg={6} sx={{display:{lg:"flex",md:"flex",sm:"flex",xs:"flex"},justifyContent:{md:"center",sm:"center",xs:"center"}}} alignItems={"center"}>
                   <Box >
                       <Box gap={3} alignItems={"center"} sx={{display:{lg:"flex",md:"flex",sm:"flex",xs:"block"},justifyContent:{md:"start",sm:"center",xs:"center"}}}>
                            <Box textAlign={"center"} padding={"10px 0px 40px 0px"}>
