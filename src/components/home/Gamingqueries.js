@@ -222,7 +222,7 @@ function Gamingqueries() {
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
-                <Accordion
+                <Accordion 
                   expanded={expanded === "panel3"}
                   onChange={handleChange("panel3")}
                   sx={{ backgroundColor: "#221C3E", border: "none" }}

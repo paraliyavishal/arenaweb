@@ -1,9 +1,9 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import shap from "../../assets/images/home/shapes-bg.webp";
-import Facilities1 from "../../assets/images/home/facilities-1.png";
-import Facilities2 from "../../assets/images/home/facilities-2.png";
-import Facilities3 from "../../assets/images/home/facilities-3.png";
+import Facilities1 from "../../assets/images/home/facilities-1.webp";
+import Facilities2 from "../../assets/images/home/facilities-2.webp";
+import Facilities3 from "../../assets/images/home/facilities-3.webp";
 import { useNavigate } from "react-router-dom";
 
 const facilitiesoffer = [

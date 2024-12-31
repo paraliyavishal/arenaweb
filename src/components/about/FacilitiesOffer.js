@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import shap from "../../assets/images/about/shapesbg.png";
-import facilogo1 from "../../assets/images/about/facilities-1.png";
-import facilogo2 from "../../assets/images/about/facilities-2.png";
-import facilogo3 from "../../assets/images/about/facilities-3.png";
-import facilogo4 from "../../assets/images/about/facilities-4.png";
-import facilogo5 from "../../assets/images/about/facilities-5.png";
-import facilogo6 from "../../assets/images/about/facilities-6.png";
+import facilogo1 from "../../assets/images/about/facilities-1.webp";
+import facilogo2 from "../../assets/images/about/facilities-2.webp";
+import facilogo3 from "../../assets/images/about/facilities-3.webp";
+import facilogo4 from "../../assets/images/about/facilities-4.webp";
+import facilogo5 from "../../assets/images/about/facilities-5.webp";
+import facilogo6 from "../../assets/images/about/facilities-6.webp";
 import Diveintodiverse from "../home/Diveintodiverse";
 
 const facilities = [

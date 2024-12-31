@@ -11,6 +11,29 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import logo_1 from '../../assets/images/home/logo_1.webp'
+import logo_2 from '../../assets/images/home/logo_2.webp'
+import logo_3 from '../../assets/images/home/logo_3.webp'
+import logo_4 from '../../assets/images/home/logo_4.webp'
+import logo_5 from '../../assets/images/home/logo_5.webp'
+
+const homeSlider = [
+  {
+    hSlider:logo_1,
+  },
+  {
+    hSlider:logo_2,
+  },
+  {
+    hSlider:logo_3,
+  },
+  {
+    hSlider:logo_4,
+  },
+  {
+    hSlider:logo_5,
+  },
+]
 
 function handleClick(event) {
   event.preventDefault();
@@ -184,72 +207,21 @@ function Aboutherosection() {
         </Typography>
         <div className="slider-container" style={{ width: "60%" }}>
           <Slider ref={sliderRef} {...settings}>
+          {homeSlider.map((item) =>
             <div>
               <img
-                src="https://html-templates.evonicmedia.com/arena/assets/images/index/logo_1.png"
+                src={item.hSlider}
                 alt=""
                 style={{
                   display: "flex",
                   justifyContent: "center",
                   marginLeft: "60px",
+                  height:"49px",
+                  width:"49px"
                 }}
               />
             </div>
-            <div>
-              <img
-                src="https://html-templates.evonicmedia.com/arena/assets/images/index/logo_2.svg"
-                alt=""
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginLeft: "60px",
-                }}
-              />
-            </div>
-            <div>
-              <img
-                src="https://html-templates.evonicmedia.com/arena/assets/images/index/logo_3.svg"
-                alt=""
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginLeft: "60px",
-                }}
-              />
-            </div>
-            <div>
-              <img
-                src="https://html-templates.evonicmedia.com/arena/assets/images/index/logo_4.svg"
-                alt=""
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginLeft: "60px",
-                }}
-              />
-            </div>
-            <div>
-              <img
-                src="https://html-templates.evonicmedia.com/arena/assets/images/index/logo_5.svg"
-                alt=""
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginLeft: "60px",
-                }}
-              />
-            </div>
-            <div>
-              <img
-                src="https://html-templates.evonicmedia.com/arena/assets/images/index/logo_6.svg"
-                alt=""
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginLeft: "60px",
-                }}
-              />
-            </div>
+          )}
           </Slider>
         </div>
       </Box>

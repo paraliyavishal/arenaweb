@@ -1,34 +1,28 @@
 import { Box, Container, Typography, Button } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import img1 from "../../../assets/images/pages/gallery-img-1.webp";
 import img2 from "../../../assets/images/pages/gallery-img-2.webp";
 import img3 from "../../../assets/images/pages/gallery-img-3.webp";
 import img4 from "../../../assets/images/pages/gallery-img-4.webp";
 import img5 from "../../../assets/images/pages/gallery-img-5.webp";
 import { useNavigate } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
-const images = [img1, img2, img3, img4, img5];
+const gallerySlider = [
+  { galleryimg: img1 },
+  { galleryimg: img2 },
+  { galleryimg: img3 },
+  { galleryimg: img4 },
+  { galleryimg: img5 },
+];
 
 function JourneyPixels() {
   const navigate = useNavigate();
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleChange = (event) => {
-    setCurrentIndex(Number(event.target.value));
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
 
   return (
     <Box
@@ -74,29 +68,39 @@ function JourneyPixels() {
           </Typography>
         </Box>
 
-        <div className="gallery-slider" style={{}}>
-          <input type="radio" name="Slider" id="s1" checked />
-          <input type="radio" name="Slider" id="s2" />
-          <input type="radio" name="Slider" id="s3" />
-          <input type="radio" name="Slider" id="s4" />
-          <input type="radio" name="Slider" id="s5" />
+        {/* Slider */}
 
-          <label for="s1" id="slider1">
-            <img src={img1} alt="Slide 1" />
-          </label>
-          <label for="s2" id="slider2">
-            <img src={img2} alt="Slide 2" />
-          </label>
-          <label for="s3" id="slider3">
-            <img src={img3} alt="Slide 3" />
-          </label>
-          <label for="s4" id="slider4">
-            <img src={img4} alt="Slide 4" />
-          </label>
-          <label for="s5" id="slider5">
-            <img src={img5} alt="Slide 5" />
-          </label>
-        </div>
+        <Box pt={3}>
+          <Swiper
+            spaceBetween={30}
+            effect={"fade"}
+            navigation={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectFade, Navigation, Pagination]}
+            className="mySwiper"
+            style={{ width: "100%", height: "550px" }}
+          >
+            {gallerySlider.map((item) => (
+              <Box>
+                <SwiperSlide
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    src={item.galleryimg}
+                    alt=""
+                    style={{ width: "500px", height: "500px" }}
+                  />
+                </SwiperSlide>
+              </Box>
+            ))}
+          </Swiper>
+        </Box>
 
         <Box mt={5} textAlign={"center"}>
           <Button

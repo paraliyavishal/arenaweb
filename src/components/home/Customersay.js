@@ -6,7 +6,6 @@ import {
   Avatar,
   Stack,
   Rating,
-  Button,
 } from "@mui/material";
 import React, { useState } from "react";
 import customer from "../../assets/images/home/customer.webp";

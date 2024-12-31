@@ -1,6 +1,6 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
-import shapebg from "../../assets/images/pricing/shapesbg.png";
+import shapebg from "../../assets/images/home/shapes-bg.webp";
 import discountimg from "../../assets/images/pricing/discountimg.webp";
 import { useNavigate } from "react-router-dom";
 
